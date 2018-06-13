@@ -16,12 +16,12 @@ struct UsernameValidator: ValidatorProtocol {
     
     func isValid(string: String) -> Bool {
         var exists = true
-        userPersist.readUser(username: string) { (users, error) in
+        userPersist.readUser(username: string) { (user, error) in
             if let error = error {
                 print(error)
                 exists = true
             } else {
-                exists = users.count > 0
+                exists = user != nil
             }
         }
         return !exists

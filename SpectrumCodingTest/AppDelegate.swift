@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - UserPersistProtocol
 
-    let userPersist:UserManagerProtocol = UserManagerCoreData()
+    let userManager:UserManagerProtocol = UserManagerCoreData()
 
     // MARK: - Core Data Saving support
 

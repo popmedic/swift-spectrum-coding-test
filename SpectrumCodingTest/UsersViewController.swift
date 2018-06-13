@@ -8,16 +8,22 @@
 
 import UIKit
 
-class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let CellIdentifier = "UsersTableViewCell"
-    let userPersist = (UIApplication.shared.delegate as! AppDelegate).userPersist
-    var users:[SCTUser]? = nil
-    @IBOutlet weak var tableView: UITableView!
+class UsersViewController: UIViewController {
+    private var collapseDetailViewController = true
     
+    let CellIdentifier = "UsersTableViewCell"
+    let userManager = (UIApplication.shared.delegate as! AppDelegate).userManager
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBAction func unwindToUsersViewController(segue:UIStoryboardSegue) { }
+    
+    var users:[SCTUser]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.tableFooterView = UIView()
+        self.splitViewController?.delegate = self
         self.reload()
     }
     
@@ -26,8 +32,16 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = (segue.destination as? UINavigationController)?.visibleViewController as? DetailedUserViewController,
+           let indexPath = tableView.indexPathForSelectedRow,
+           let users = self.users {
+            destination.userID = users[indexPath.row].id
+        }
+    }
+    
     func reload() {
-        userPersist.readAllUsers() { (users, error) in
+        userManager.readAllUsers() { (users, error) in
             if let error = error {
                 print(error)
                 return
@@ -35,10 +49,11 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.users = users
         }
         self.tableView.reloadData()
+        self.collapseDetailViewController = true
     }
 }
 
-extension UsersViewController {
+extension UsersViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users == nil ? 0 : users!.count
     }
@@ -57,5 +72,18 @@ extension UsersViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 56.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        collapseDetailViewController = false
+    }
 }
 
+extension UsersViewController: UISplitViewControllerDelegate {
+    func splitViewController(
+        _ splitViewController: UISplitViewController,
+        collapseSecondary secondaryViewController: UIViewController,
+        onto primaryViewController: UIViewController
+    ) -> Bool {
+        return self.collapseDetailViewController
+    }
+}

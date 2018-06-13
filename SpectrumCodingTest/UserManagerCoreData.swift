@@ -49,7 +49,7 @@ class UserManagerCoreData: UserManagerProtocol {
             let users = try container.viewContext.fetch(fetchRequest)
             var res = [SCTUser]()
             for user in users {
-                let id = user.objectID.uriRepresentation().path
+                let id = user.objectID.uriRepresentation()
                 let username = user.value(forKey: "username") as? String ?? ""
                 let password = user.value(forKey: "password") as? String ?? ""
                 let image = user.value(forKey: "image") as? Data
@@ -67,23 +67,81 @@ class UserManagerCoreData: UserManagerProtocol {
         }
     }
     
-    func readUser(id:String, completion:((_ users:[SCTUser], _ error:NSError?)->Void)?) {
-        self.readUser(withPredicate: NSPredicate(format: "%K == %@", "id", id), completion: completion)
+    func readUser(id:Any, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?) {
+        if let id = id as? URL {
+            if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(
+                forURIRepresentation: id) {
+                let user = self.container.viewContext.object(with:managedObjectID)
+                let res = SCTUser(
+                    id: id,
+                    username: user.value(forKey: "username") as? String ?? "",
+                    password: user.value(forKey: "password") as? String ?? "",
+                    image: user.value(forKey: "image") as? Data
+                        ?? UIImagePNGRepresentation(UIImage(named: "DefaultUserImage")!)!
+                )
+                completion?(res, nil)
+                return
+            }
+        }
+        completion?(nil, nil)
     }
     
-    func readUser(username:String, completion:((_ users:[SCTUser], _ error:NSError?)->Void)?) {
-        self.readUser(withPredicate: NSPredicate(format: "%K == %@", "username", username), completion: completion)
+    func readUser(username:String, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?) {
+        self.readUser(withPredicate: NSPredicate(format: "%K == %@", "username", username)) { (users, error) in
+            if let error = error {
+                completion?(nil, error)
+                return
+            }
+            if users.count == 0 {
+                completion?(nil, nil)
+                return
+            }
+            completion?(users[0], nil)
+            
+        }
     }
     
     func readAllUsers(completion:((_ users:[SCTUser], _ error:NSError?)->Void)?) {
         self.readUser(withPredicate: nil, completion: completion)
     }
     
-    func updateUser(id: String, username:String?, password:String?, image:Data?, completion:((NSError?)->Void)?) {
-        
+    func updateUser(id: Any, username:String?, password:String?, image:Data?, completion:((NSError?)->Void)?) {
+        if let id = id as? URL {
+            if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(
+                forURIRepresentation: id) {
+                let user = self.container.viewContext.object(with:managedObjectID)
+                if let username = username { user.setValue(username, forKey: "username") }
+                if let password = password { user.setValue(password, forKey: "password") }
+                if let image = image { user.setValue(image, forKey: "image") }
+                if self.container.viewContext.hasChanges {
+                    do {
+                        try self.container.viewContext.save()
+                    } catch {
+                        completion?(error as NSError)
+                        return
+                    }
+                }
+            }
+        }
+        completion?(nil)
     }
     
-    func deleteUser(id: String, completion:((NSError?)->Void)?) {
-        
+    func deleteUser(id: Any, completion:((NSError?)->Void)?) {
+        if let id = id as? URL {
+            if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(
+                forURIRepresentation: id) {
+                let user = self.container.viewContext.object(with:managedObjectID)
+                self.container.viewContext.delete(user)
+                if self.container.viewContext.hasChanges {
+                    do {
+                        try self.container.viewContext.save()
+                    } catch {
+                        completion?(error as NSError)
+                        return
+                    }
+                }
+            }
+        }
+        completion?(nil)
     }
 }

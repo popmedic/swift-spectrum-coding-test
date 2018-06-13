@@ -24,6 +24,9 @@
 		0A4E747C20D09E870002D769 /* CharSetValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E747B20D09E870002D769 /* CharSetValidator.swift */; };
 		0A4E747F20D0A3660002D769 /* LetterAndNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E747E20D0A3660002D769 /* LetterAndNumberValidator.swift */; };
 		0A4E748320D0B5A10002D769 /* UsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748220D0B5A10002D769 /* UsernameValidator.swift */; };
+		0A4E748520D152C00002D769 /* DetailedUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748420D152C00002D769 /* DetailedUserViewController.swift */; };
+		0A4E748920D198F50002D769 /* ValidateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748820D198F50002D769 /* ValidateView.swift */; };
+		0A4E748B20D199190002D769 /* ValidateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E748A20D199190002D769 /* ValidateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		0A4E747B20D09E870002D769 /* CharSetValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSetValidator.swift; sourceTree = "<group>"; };
 		0A4E747E20D0A3660002D769 /* LetterAndNumberValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAndNumberValidator.swift; sourceTree = "<group>"; };
 		0A4E748220D0B5A10002D769 /* UsernameValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameValidator.swift; sourceTree = "<group>"; };
+		0A4E748420D152C00002D769 /* DetailedUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUserViewController.swift; sourceTree = "<group>"; };
+		0A4E748820D198F50002D769 /* ValidateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateView.swift; sourceTree = "<group>"; };
+		0A4E748A20D199190002D769 /* ValidateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +131,13 @@
 				0A4E744920D0279D0002D769 /* Info.plist */,
 				0A4E744120D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld */,
 				0A4E747520D07F520002D769 /* AddUserViewController.swift */,
+				0A4E748420D152C00002D769 /* DetailedUserViewController.swift */,
 				0A4E743C20D0279D0002D769 /* UsersViewController.swift */,
 				0A4E746B20D0342C0002D769 /* UsersTableViewCell.swift */,
 				0A4E746D20D03DB70002D769 /* UserManagerProtocol.swift */,
 				0A4E747320D040C40002D769 /* UserManagerCoreData.swift */,
+				0A4E748820D198F50002D769 /* ValidateView.swift */,
+				0A4E748A20D199190002D769 /* ValidateView.xib */,
 			);
 			path = SpectrumCodingTest;
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 			files = (
 				0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */,
 				0A4E744520D0279D0002D769 /* Assets.xcassets in Resources */,
+				0A4E748B20D199190002D769 /* ValidateView.xib in Resources */,
 				0A4E744020D0279D0002D769 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +309,13 @@
 			files = (
 				0A4E747420D040C40002D769 /* UserManagerCoreData.swift in Sources */,
 				0A4E746C20D0342C0002D769 /* UsersTableViewCell.swift in Sources */,
+				0A4E748520D152C00002D769 /* DetailedUserViewController.swift in Sources */,
 				0A4E743D20D0279D0002D769 /* UsersViewController.swift in Sources */,
 				0A4E747A20D09A250002D769 /* LengthValidator.swift in Sources */,
 				0A4E748320D0B5A10002D769 /* UsernameValidator.swift in Sources */,
 				0A4E747F20D0A3660002D769 /* LetterAndNumberValidator.swift in Sources */,
 				0A4E743B20D0279D0002D769 /* AppDelegate.swift in Sources */,
+				0A4E748920D198F50002D769 /* ValidateView.swift in Sources */,
 				0A4E747620D07F520002D769 /* AddUserViewController.swift in Sources */,
 				0A4E747820D0999C0002D769 /* ValidatorProtocol.swift in Sources */,
 				0A4E744320D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld in Sources */,

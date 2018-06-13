@@ -11,7 +11,7 @@ import UIKit
 class AddUserViewController: UIViewController {
     private let checkedString = "✅"
     private let exedString = "❌"
-    private let userPersist = (UIApplication.shared.delegate as! AppDelegate).userPersist
+    private let userManager = (UIApplication.shared.delegate as! AppDelegate).userManager
     private var addUserButtonEnabled:Bool {
         get {
             return self.addUserButton.isEnabled
@@ -69,7 +69,7 @@ class AddUserViewController: UIViewController {
     }
     
     @IBAction func addUserButtonAction(_ sender: Any) {
-        userPersist.createUser(
+        userManager.createUser(
             username: self.usernameTextField.text!,
             password: self.passwordTextField.text!,
             image: nil
@@ -139,7 +139,7 @@ class AddUserViewController: UIViewController {
             self.usernameValidationLabel.text = "username must be filled out"
             return false
         }
-        if !UsernameValidator(userPersist: self.userPersist).isValid(string: text) {
+        if !UsernameValidator(userPersist: self.userManager).isValid(string: text) {
             self.usernameValidationLabel.text = "username already exists"
             return false
         }

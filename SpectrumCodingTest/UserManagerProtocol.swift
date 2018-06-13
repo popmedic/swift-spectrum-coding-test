@@ -8,13 +8,13 @@
 
 import Foundation
 
-typealias SCTUser = (id:String, username:String, password:String, image:Data)
+typealias SCTUser = (id:Any, username:String, password:String, image:Data)
 
 protocol UserManagerProtocol {
     func createUser(username:String, password:String, image:Data?, completion:((NSError?)->Void)?)
-    func readUser(id:String, completion:((_ users:[SCTUser], _ error:NSError?)->Void)?)
-    func readUser(username:String, completion:((_ users:[SCTUser], _ error:NSError?)->Void)?)
+    func readUser(id:Any, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?)
+    func readUser(username:String, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?)
     func readAllUsers(completion:((_ users:[SCTUser], _ error:NSError?)->Void)?)
-    func updateUser(id: String, username:String?, password:String?, image:Data?, completion:((NSError?)->Void)?)
-    func deleteUser(id: String, completion:((NSError?)->Void)?)
+    func updateUser(id: Any, username:String?, password:String?, image:Data?, completion:((NSError?)->Void)?)
+    func deleteUser(id: Any, completion:((NSError?)->Void)?)
 }
