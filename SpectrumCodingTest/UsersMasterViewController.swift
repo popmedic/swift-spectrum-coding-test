@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UsersViewController: UIViewController {
+class UsersMasterViewController: UIViewController {
     private var collapseDetailViewController = true
     
     let CellIdentifier = "UsersTableViewCell"
@@ -33,10 +33,16 @@ class UsersViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = (segue.destination as? UINavigationController)?.visibleViewController as? DetailedUserViewController,
+        if let destination = (segue.destination as? UINavigationController)?.visibleViewController as? UsersDetailViewController,
            let indexPath = tableView.indexPathForSelectedRow,
-           let users = self.users {
-            destination.userID = users[indexPath.row].id
+           let identifier = segue.identifier {
+            if identifier == "ShowDetailSegueToEdit" {
+                if let users = self.users {
+                    destination.userID = users[indexPath.row].id
+                }
+            } else if identifier == "ShowDetailSegueToAdd" {
+                destination.userID = nil
+            }
         }
     }
     
@@ -53,7 +59,7 @@ class UsersViewController: UIViewController {
     }
 }
 
-extension UsersViewController:  UITableViewDelegate, UITableViewDataSource {
+extension UsersMasterViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users == nil ? 0 : users!.count
     }
@@ -78,7 +84,7 @@ extension UsersViewController:  UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension UsersViewController: UISplitViewControllerDelegate {
+extension UsersMasterViewController: UISplitViewControllerDelegate {
     func splitViewController(
         _ splitViewController: UISplitViewController,
         collapseSecondary secondaryViewController: UIViewController,
