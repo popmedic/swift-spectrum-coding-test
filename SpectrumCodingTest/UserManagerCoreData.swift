@@ -1,5 +1,5 @@
 //
-//  UserPersistCoreData.swift
+//  UserManagerCoreData.swift
 //  SpectrumCodingTest
 //
 //  Created by Kevin Scardina on 6/12/18.

@@ -9,38 +9,14 @@
 import UIKit
 
 class UsersDetailViewController: UIViewController {
-    let userManager = (UIApplication.shared.delegate as! AppDelegate).userManager
+    private let userManager = (UIApplication.shared.delegate as! AppDelegate).userManager
     
-    private var buttonEnabled:Bool {
-        get {
-            return self.updateUserButton.isEnabled
-        }
-        set(value) {
-            if self.isEdit {
-                self.updateUserButton.isEnabled = value
-                if value {
-                    self.updateUserButton.backgroundColor = UIColor(red: 0.0, green: 111.0/255.0, blue: 1, alpha: 1)
-                } else {
-                    self.updateUserButton.backgroundColor = UIColor.lightGray
-                }
-            } else {
-                self.addUserButton.isEnabled = value
-                if value {
-                    self.addUserButton.backgroundColor = UIColor(red: 0.0, green: 111.0/255.0, blue: 1, alpha: 1)
-                } else {
-                    self.addUserButton.backgroundColor = UIColor.lightGray
-                }
-            }
-        }
-    }
-    private var isEdit:Bool {
-        get {
-            return userID != nil
-        }
-    }
+    var userID:Any?
     
     @IBOutlet var bottomConstraints: [NSLayoutConstraint]!
-//    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var lettersAndDigitsValidateView: ValidateView!
+    @IBOutlet weak var between5And12ValidateView: ValidateView!
+    @IBOutlet weak var sameSequenceValidateView: ValidateView!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -48,9 +24,6 @@ class UsersDetailViewController: UIViewController {
     @IBOutlet weak var deleteUserButton: UIButton!
     @IBOutlet weak var addUserButton: UIButton!
     @IBOutlet weak var usernameValidationLabel: UILabel!
-    @IBOutlet weak var passwordValidationView: PasswordValidationView!
-    
-    var userID:Any?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,12 +39,20 @@ class UsersDetailViewController: UIViewController {
         )
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
         
+        self.between5And12ValidateView.validators.append(LengthValidator.init(range: 5..<13))
+        self.lettersAndDigitsValidateView.validators.append(CharSetValidator(charset: CharacterSet.alphanumerics))
+        self.lettersAndDigitsValidateView.validators.append(LetterAndNumberValidator())
+        self.sameSequenceValidateView.validators.append(SequenceValidator(true))
+        
         self.view.isHidden = !configureView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: self.view.window)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: self.view.window)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSNotification.Name.UIKeyboardWillChangeFrame,
+            object: nil
+        )
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,51 +62,7 @@ class UsersDetailViewController: UIViewController {
     
     @IBAction func imageButtonAction(_ sender: Any) {
         self.endEditing()
-        let alert = UIAlertController(
-            title: nil,
-            message: nil,
-            preferredStyle: UIDevice().userInterfaceIdiom == .pad ? .alert : .actionSheet
-        )
-        
-        alert.addAction(
-            UIAlertAction(
-                title: "Camera",
-                style: .default,
-                handler: { (alert:UIAlertAction!) -> Void in
-                    if UIImagePickerController.isSourceTypeAvailable(.camera){
-                        let pickerController = UIImagePickerController()
-                        pickerController.delegate = self;
-                        pickerController.sourceType = .camera
-                        self.present(pickerController, animated: true, completion: nil)
-                    }
-                }
-            )
-        )
-        
-        alert.addAction(
-            UIAlertAction(
-                title: "Gallery",
-                style: .default,
-                handler: { (alert:UIAlertAction!) -> Void in
-                    if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-                        let myPickerController = UIImagePickerController()
-                        myPickerController.delegate = self;
-                        myPickerController.sourceType = .photoLibrary
-                        self.present(myPickerController, animated: true, completion: nil)
-                    }
-                }
-            )
-        )
-        
-        alert.addAction(
-            UIAlertAction(
-                title: "Cancel",
-                style: .cancel,
-                handler: nil
-            )
-        )
-        
-        self.present(alert, animated: true, completion: nil)
+        self.showImageAlert()
     }
     
     @IBAction func updateUserButtonAction(_ sender: Any) {
@@ -138,7 +75,7 @@ class UsersDetailViewController: UIViewController {
             image: UIImagePNGRepresentation(self.imageButton.backgroundImage(for: .normal)!)
         ) { (error) in
             if let error = error {
-                print(error)
+                self.showAlertOk(title: "Update User Error", message: error.localizedDescription)
                 return
             }
             if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
@@ -152,7 +89,7 @@ class UsersDetailViewController: UIViewController {
         if let userID = self.userID {
             self.userManager.deleteUser(id: userID) { (error) in
                 if let error = error {
-                    print(error)
+                    self.showAlertOk(title: "Delete User Error", message: error.localizedDescription)
                     return
                 }
                 if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
@@ -173,13 +110,13 @@ class UsersDetailViewController: UIViewController {
             image: UIImagePNGRepresentation(self.imageButton.backgroundImage(for: .normal)!)
         ) { (error) in
             if let error = error {
-                print(error)
+                self.showAlertOk(title: "Create User Error", message: error.localizedDescription)
                 return
             }
             if let username = self.usernameTextField.text {
                 self.userManager.readUser(username: username, completion: { (user, error) in
                     if let error = error {
-                        print(error)
+                        self.showAlertOk(title: "Update/Read User Error", message: error.localizedDescription)
                         return
                     }
                     if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
@@ -196,7 +133,13 @@ class UsersDetailViewController: UIViewController {
     }
     
     func isValidPassword() -> Bool {
-        return self.passwordValidationView.validate(string: passwordTextField.text ?? "")
+        let string = self.passwordTextField.text ?? ""
+        self.lettersAndDigitsValidateView.validate(string: string)
+        self.between5And12ValidateView.validate(string: string)
+        self.sameSequenceValidateView.validate(string: string)
+        return self.lettersAndDigitsValidateView.isValid &&
+            self.between5And12ValidateView.isValid &&
+            self.sameSequenceValidateView.isValid
     }
 
     func isValidUsername() -> Bool {
@@ -252,6 +195,8 @@ class UsersDetailViewController: UIViewController {
     }
 }
 
+// MARK: - Camera and Galery
+
 extension UsersDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
@@ -264,9 +209,84 @@ extension UsersDetailViewController: UIImagePickerControllerDelegate, UINavigati
         self.dismiss(animated: true, completion: nil)
     }
     
+    func showImageAlert() {
+        let alert = UIAlertController(
+            title: nil,
+            message: nil,
+            preferredStyle: UIDevice().userInterfaceIdiom == .pad ? .alert : .actionSheet
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Camera",
+                style: .default,
+                handler: { (alert:UIAlertAction!) -> Void in
+                    if UIImagePickerController.isSourceTypeAvailable(.camera){
+                        let pickerController = UIImagePickerController()
+                        pickerController.delegate = self;
+                        pickerController.sourceType = .camera
+                        self.present(pickerController, animated: true, completion: nil)
+                    }
+            }
+            )
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Gallery",
+                style: .default,
+                handler: { (alert:UIAlertAction!) -> Void in
+                    if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+                        let myPickerController = UIImagePickerController()
+                        myPickerController.delegate = self;
+                        myPickerController.sourceType = .photoLibrary
+                        self.present(myPickerController, animated: true, completion: nil)
+                    }
+            }
+            )
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "Cancel",
+                style: .cancel,
+                handler: nil
+            )
+        )
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
+
+
+// MARK: - View configuration for Create user to Edit user
+
 extension UsersDetailViewController {
+    private var buttonEnabled:Bool {
+        get {
+            return self.updateUserButton.isEnabled
+        }
+        set(value) {
+            let userButton:UIButton!
+            if self.isEdit {
+                userButton = self.updateUserButton
+            } else {
+                userButton = self.addUserButton
+            }
+            userButton.isEnabled = value
+            if value {
+                userButton.backgroundColor = UIColor(red: 0.0, green: 111.0/255.0, blue: 1, alpha: 1)
+            } else {
+                userButton.backgroundColor = UIColor.lightGray
+            }
+        }
+    }
+    private var isEdit:Bool {
+        get {
+            return userID != nil
+        }
+    }
     private func configureView() -> Bool {
         if let userID = self.userID {
             return configureEditView(userID:userID)
@@ -296,7 +316,7 @@ extension UsersDetailViewController {
         var success = true
         self.userManager.readUser(id: userID, completion: { (user, error) in
             if let error = error {
-                print(error)
+                self.showAlertOk(title: "Read User By Username Error", message: error.localizedDescription)
                 success = false
             }
             if let user = user {

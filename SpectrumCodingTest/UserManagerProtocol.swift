@@ -1,5 +1,5 @@
 //
-//  PersistProtocol.swift
+//  UserManagerProtocol.swift
 //  SpectrumCodingTest
 //
 //  Created by Kevin Scardina on 6/12/18.
@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ Tuple to use for a user
+ */
 typealias SCTUser = (id:Any, username:String, password:String, image:Data)
 
 protocol UserManagerProtocol {

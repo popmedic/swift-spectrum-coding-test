@@ -24,12 +24,12 @@ class UsersMasterViewController: UIViewController {
         
         self.tableView.tableFooterView = UIView()
         self.splitViewController?.delegate = self
+        self.splitViewController?.presentsWithGesture = true
         self.reload()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,7 +49,7 @@ class UsersMasterViewController: UIViewController {
     func reload() {
         userManager.readAllUsers() { (users, error) in
             if let error = error {
-                print(error)
+                self.showAlertOk(title: "Read All Users Error", message: error.localizedDescription)
                 return
             }
             self.users = users
