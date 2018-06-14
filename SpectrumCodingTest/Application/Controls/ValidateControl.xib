@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidateView" customModule="SpectrumCodingTest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidateControl" customModule="SpectrumCodingTest" customModuleProvider="target">
             <connections>
                 <outlet property="checkedLabel" destination="P7r-Zu-aGM" id="Cwr-b0-sAS"/>
                 <outlet property="containerView" destination="iN0-l3-epB" id="p0M-CC-pXM"/>

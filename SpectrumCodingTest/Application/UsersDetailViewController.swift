@@ -14,9 +14,9 @@ class UsersDetailViewController: UIViewController {
     var userID:Any?
     
     @IBOutlet var bottomConstraints: [NSLayoutConstraint]!
-    @IBOutlet weak var lettersAndDigitsValidateView: ValidateView!
-    @IBOutlet weak var between5And12ValidateView: ValidateView!
-    @IBOutlet weak var sameSequenceValidateView: ValidateView!
+    @IBOutlet weak var lettersAndDigitsValidateControl: ValidateControl!
+    @IBOutlet weak var between5And12ValidateControl: ValidateControl!
+    @IBOutlet weak var sameSequenceValidateControl: ValidateControl!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -39,10 +39,10 @@ class UsersDetailViewController: UIViewController {
         )
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
         
-        self.between5And12ValidateView.validators.append(LengthValidator.init(range: 5..<13))
-        self.lettersAndDigitsValidateView.validators.append(CharSetValidator(charset: CharacterSet.alphanumerics))
-        self.lettersAndDigitsValidateView.validators.append(LetterAndNumberValidator())
-        self.sameSequenceValidateView.validators.append(SequenceValidator(true))
+        self.between5And12ValidateControl.validators.append(LengthValidator.init(range: 5..<13))
+        self.lettersAndDigitsValidateControl.validators.append(CharSetValidator(charset: CharacterSet.alphanumerics))
+        self.lettersAndDigitsValidateControl.validators.append(LetterAndNumberValidator())
+        self.sameSequenceValidateControl.validators.append(SequenceValidator(true))
         
         self.view.isHidden = !configureView()
     }
@@ -134,12 +134,12 @@ class UsersDetailViewController: UIViewController {
     
     func isValidPassword() -> Bool {
         let string = self.passwordTextField.text ?? ""
-        self.lettersAndDigitsValidateView.validate(string: string)
-        self.between5And12ValidateView.validate(string: string)
-        self.sameSequenceValidateView.validate(string: string)
-        return self.lettersAndDigitsValidateView.isValid &&
-            self.between5And12ValidateView.isValid &&
-            self.sameSequenceValidateView.isValid
+        self.lettersAndDigitsValidateControl.validate(string: string)
+        self.between5And12ValidateControl.validate(string: string)
+        self.sameSequenceValidateControl.validate(string: string)
+        return self.lettersAndDigitsValidateControl.isValid &&
+            self.between5And12ValidateControl.isValid &&
+            self.sameSequenceValidateControl.isValid
     }
 
     func isValidUsername() -> Bool {

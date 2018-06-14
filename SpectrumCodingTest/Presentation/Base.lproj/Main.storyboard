@@ -151,7 +151,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBs-70-eAX" customClass="ValidateView" customModule="SpectrumCodingTest" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBs-70-eAX" customClass="ValidateControl" customModule="SpectrumCodingTest" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="25" width="224" height="52"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,7 +159,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="be between 5 and 12 characters in length."/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yoB-tf-MSc" customClass="ValidateView" customModule="SpectrumCodingTest" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yoB-tf-MSc" customClass="ValidateControl" customModule="SpectrumCodingTest" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="85" width="224" height="70"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,7 +167,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="be a mixture of letters and numerical digits only, with at least one of each."/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-DL-X4F" customClass="ValidateView" customModule="SpectrumCodingTest" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-DL-X4F" customClass="ValidateControl" customModule="SpectrumCodingTest" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="163" width="224" height="71"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -299,12 +299,12 @@
                     <navigationItem key="navigationItem" title="User Details" id="plb-qa-Bx7"/>
                     <connections>
                         <outlet property="addUserButton" destination="RY8-5W-x8D" id="Hci-Go-Fi5"/>
-                        <outlet property="between5And12ValidateView" destination="yBs-70-eAX" id="n3b-nw-cqZ"/>
+                        <outlet property="between5And12ValidateControl" destination="yBs-70-eAX" id="n3b-nw-cqZ"/>
                         <outlet property="deleteUserButton" destination="K2V-0d-L5z" id="a1Z-YP-6Q1"/>
                         <outlet property="imageButton" destination="8EJ-ya-AAQ" id="P0a-NZ-o9y"/>
-                        <outlet property="lettersAndDigitsValidateView" destination="yoB-tf-MSc" id="fZe-d9-NKm"/>
+                        <outlet property="lettersAndDigitsValidateControl" destination="yoB-tf-MSc" id="fZe-d9-NKm"/>
                         <outlet property="passwordTextField" destination="6dF-Pd-382" id="sc1-y9-Mgs"/>
-                        <outlet property="sameSequenceValidateView" destination="wOg-DL-X4F" id="XRg-pY-n9R"/>
+                        <outlet property="sameSequenceValidateControl" destination="wOg-DL-X4F" id="XRg-pY-n9R"/>
                         <outlet property="updateUserButton" destination="PPL-uB-jah" id="KBm-Ra-oZn"/>
                         <outlet property="usernameTextField" destination="5l5-e4-xxJ" id="BEC-zR-04D"/>
                         <outlet property="usernameValidationLabel" destination="3XQ-4F-0sb" id="JsX-wL-lMg"/>

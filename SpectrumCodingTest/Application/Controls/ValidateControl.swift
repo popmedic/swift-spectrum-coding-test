@@ -1,5 +1,5 @@
 //
-//  ValidateView.swift
+//  ValidateControl.swift
 //  SpectrumCodingTest
 //
 //  Created by Kevin Scardina on 6/13/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ValidateView: UIView {
+class ValidateControl: UIView {
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var checkedLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -52,8 +52,8 @@ class ValidateView: UIView {
     }
     
     private func initNib() {
-        let bundle = Bundle(for: ValidateView.self)
-        bundle.loadNibNamed("ValidateView", owner: self, options: nil)
+        let bundle = Bundle(for: ValidateControl.self)
+        bundle.loadNibNamed("ValidateControl", owner: self, options: nil)
         self.addSubview(containerView)
         self.containerView.frame = self.bounds
         self.containerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]

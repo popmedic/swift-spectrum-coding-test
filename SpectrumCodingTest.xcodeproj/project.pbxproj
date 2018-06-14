@@ -11,10 +11,8 @@
 		0A4E743D20D0279D0002D769 /* UsersMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E743C20D0279D0002D769 /* UsersMasterViewController.swift */; };
 		0A4E744020D0279D0002D769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E743E20D0279D0002D769 /* Main.storyboard */; };
 		0A4E744320D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E744120D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld */; };
-		0A4E744520D0279D0002D769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E744420D0279D0002D769 /* Assets.xcassets */; };
 		0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E744620D0279D0002D769 /* LaunchScreen.storyboard */; };
 		0A4E745320D0279D0002D769 /* SpectrumCodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E745220D0279D0002D769 /* SpectrumCodingTestTests.swift */; };
-		0A4E745E20D0279D0002D769 /* SpectrumCodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E745D20D0279D0002D769 /* SpectrumCodingTestUITests.swift */; };
 		0A4E746C20D0342C0002D769 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E746B20D0342C0002D769 /* UsersTableViewCell.swift */; };
 		0A4E746E20D03DB70002D769 /* UserManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E746D20D03DB70002D769 /* UserManagerProtocol.swift */; };
 		0A4E747420D040C40002D769 /* UserManagerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E747320D040C40002D769 /* UserManagerCoreData.swift */; };
@@ -24,22 +22,16 @@
 		0A4E747F20D0A3660002D769 /* LetterAndNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E747E20D0A3660002D769 /* LetterAndNumberValidator.swift */; };
 		0A4E748320D0B5A10002D769 /* UsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748220D0B5A10002D769 /* UsernameValidator.swift */; };
 		0A4E748520D152C00002D769 /* UsersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748420D152C00002D769 /* UsersDetailViewController.swift */; };
-		0A4E748920D198F50002D769 /* ValidateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748820D198F50002D769 /* ValidateView.swift */; };
-		0A4E748B20D199190002D769 /* ValidateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E748A20D199190002D769 /* ValidateView.xib */; };
+		0A4E748920D198F50002D769 /* ValidateControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748820D198F50002D769 /* ValidateControl.swift */; };
+		0A4E748B20D199190002D769 /* ValidateControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E748A20D199190002D769 /* ValidateControl.xib */; };
 		0A4E749A20D20D270002D769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E749920D20D270002D769 /* README.md */; };
 		0A4E749C20D2BE840002D769 /* SequenceValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E749B20D2BE840002D769 /* SequenceValidator.swift */; };
 		0A4E74A220D2E0E20002D769 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E74A120D2E0E20002D769 /* UIViewController.swift */; };
+		0AD9024720D3077B002CA76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E744420D0279D0002D769 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0A4E744F20D0279D0002D769 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A4E742F20D0279D0002D769 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A4E743620D0279D0002D769;
-			remoteInfo = SpectrumCodingTest;
-		};
-		0A4E745A20D0279D0002D769 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A4E742F20D0279D0002D769 /* Project object */;
 			proxyType = 1;
@@ -56,13 +48,9 @@
 		0A4E744220D0279D0002D769 /* SpectrumCodingTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpectrumCodingTest.xcdatamodel; sourceTree = "<group>"; };
 		0A4E744420D0279D0002D769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4E744720D0279D0002D769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A4E744920D0279D0002D769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4E744E20D0279D0002D769 /* SpectrumCodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectrumCodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4E745220D0279D0002D769 /* SpectrumCodingTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumCodingTestTests.swift; sourceTree = "<group>"; };
 		0A4E745420D0279D0002D769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A4E745920D0279D0002D769 /* SpectrumCodingTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectrumCodingTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A4E745D20D0279D0002D769 /* SpectrumCodingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumCodingTestUITests.swift; sourceTree = "<group>"; };
-		0A4E745F20D0279D0002D769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4E746B20D0342C0002D769 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		0A4E746D20D03DB70002D769 /* UserManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerProtocol.swift; sourceTree = "<group>"; };
 		0A4E747320D040C40002D769 /* UserManagerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerCoreData.swift; sourceTree = "<group>"; };
@@ -72,11 +60,12 @@
 		0A4E747E20D0A3660002D769 /* LetterAndNumberValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAndNumberValidator.swift; sourceTree = "<group>"; };
 		0A4E748220D0B5A10002D769 /* UsernameValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameValidator.swift; sourceTree = "<group>"; };
 		0A4E748420D152C00002D769 /* UsersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDetailViewController.swift; sourceTree = "<group>"; };
-		0A4E748820D198F50002D769 /* ValidateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateView.swift; sourceTree = "<group>"; };
-		0A4E748A20D199190002D769 /* ValidateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidateView.xib; sourceTree = "<group>"; };
+		0A4E748820D198F50002D769 /* ValidateControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateControl.swift; sourceTree = "<group>"; };
+		0A4E748A20D199190002D769 /* ValidateControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValidateControl.xib; sourceTree = "<group>"; };
 		0A4E749920D20D270002D769 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A4E749B20D2BE840002D769 /* SequenceValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceValidator.swift; sourceTree = "<group>"; };
 		0A4E74A120D2E0E20002D769 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		0A62A39F20D30608000CE464 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A4E745620D0279D0002D769 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,7 +92,6 @@
 				0A4E749920D20D270002D769 /* README.md */,
 				0A4E743920D0279D0002D769 /* SpectrumCodingTest */,
 				0A4E745120D0279D0002D769 /* SpectrumCodingTestTests */,
-				0A4E745C20D0279D0002D769 /* SpectrumCodingTestUITests */,
 				0A4E743820D0279D0002D769 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +101,6 @@
 			children = (
 				0A4E743720D0279D0002D769 /* SpectrumCodingTest.app */,
 				0A4E744E20D0279D0002D769 /* SpectrumCodingTestTests.xctest */,
-				0A4E745920D0279D0002D769 /* SpectrumCodingTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,10 +108,10 @@
 		0A4E743920D0279D0002D769 /* SpectrumCodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				0A4E749120D1CAAF0002D769 /* Presentation */,
-				0A4E749220D1CB330002D769 /* Application */,
-				0A4E74A320D2E64D0002D769 /* Domain */,
-				0A4E749020D1CA890002D769 /* Infrastructure */,
+				0A4E74A520D2FFBF0002D769 /* Presentation */,
+				0A4E74A620D2FFD80002D769 /* Application */,
+				0A4E74A720D300050002D769 /* Domain */,
+				0A4E74A820D3008E0002D769 /* Infrastructure */,
 			);
 			path = SpectrumCodingTest;
 			sourceTree = "<group>";
@@ -143,15 +123,6 @@
 				0A4E745420D0279D0002D769 /* Info.plist */,
 			);
 			path = SpectrumCodingTestTests;
-			sourceTree = "<group>";
-		};
-		0A4E745C20D0279D0002D769 /* SpectrumCodingTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A4E745D20D0279D0002D769 /* SpectrumCodingTestUITests.swift */,
-				0A4E745F20D0279D0002D769 /* Info.plist */,
-			);
-			path = SpectrumCodingTestUITests;
 			sourceTree = "<group>";
 		};
 		0A4E747D20D0A22A0002D769 /* Validators */ = {
@@ -167,39 +138,6 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
-		0A4E749020D1CA890002D769 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				0A4E744420D0279D0002D769 /* Assets.xcassets */,
-				0A4E744120D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld */,
-				0A4E744920D0279D0002D769 /* Info.plist */,
-			);
-			name = Infrastructure;
-			sourceTree = "<group>";
-		};
-		0A4E749120D1CAAF0002D769 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				0A4E743E20D0279D0002D769 /* Main.storyboard */,
-				0A4E744620D0279D0002D769 /* LaunchScreen.storyboard */,
-				0A4E748A20D199190002D769 /* ValidateView.xib */,
-				0A4E748820D198F50002D769 /* ValidateView.swift */,
-				0A4E746B20D0342C0002D769 /* UsersTableViewCell.swift */,
-			);
-			name = Presentation;
-			sourceTree = "<group>";
-		};
-		0A4E749220D1CB330002D769 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				0A4E743A20D0279D0002D769 /* AppDelegate.swift */,
-				0A4E748420D152C00002D769 /* UsersDetailViewController.swift */,
-				0A4E743C20D0279D0002D769 /* UsersMasterViewController.swift */,
-				0A4E74A020D2E0CA0002D769 /* Extensions */,
-			);
-			name = Application;
-			sourceTree = "<group>";
-		};
 		0A4E74A020D2E0CA0002D769 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,14 +146,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0A4E74A320D2E64D0002D769 /* Domain */ = {
+		0A4E74A420D2FE870002D769 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E748A20D199190002D769 /* ValidateControl.xib */,
+				0A4E748820D198F50002D769 /* ValidateControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		0A4E74A520D2FFBF0002D769 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E743E20D0279D0002D769 /* Main.storyboard */,
+				0A4E744620D0279D0002D769 /* LaunchScreen.storyboard */,
+				0A4E746B20D0342C0002D769 /* UsersTableViewCell.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0A4E74A620D2FFD80002D769 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E743A20D0279D0002D769 /* AppDelegate.swift */,
+				0A4E748420D152C00002D769 /* UsersDetailViewController.swift */,
+				0A4E743C20D0279D0002D769 /* UsersMasterViewController.swift */,
+				0A4E74A420D2FE870002D769 /* Controls */,
+				0A4E74A020D2E0CA0002D769 /* Extensions */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0A4E74A720D300050002D769 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				0A4E746D20D03DB70002D769 /* UserManagerProtocol.swift */,
 				0A4E747320D040C40002D769 /* UserManagerCoreData.swift */,
 				0A4E747D20D0A22A0002D769 /* Validators */,
 			);
-			name = Domain;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0A4E74A820D3008E0002D769 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0A62A39F20D30608000CE464 /* Info.plist */,
+				0A4E744420D0279D0002D769 /* Assets.xcassets */,
+				0A4E744120D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,24 +235,6 @@
 			productReference = 0A4E744E20D0279D0002D769 /* SpectrumCodingTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A4E745820D0279D0002D769 /* SpectrumCodingTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A4E746820D0279D0002D769 /* Build configuration list for PBXNativeTarget "SpectrumCodingTestUITests" */;
-			buildPhases = (
-				0A4E745520D0279D0002D769 /* Sources */,
-				0A4E745620D0279D0002D769 /* Frameworks */,
-				0A4E745720D0279D0002D769 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A4E745B20D0279D0002D769 /* PBXTargetDependency */,
-			);
-			name = SpectrumCodingTestUITests;
-			productName = SpectrumCodingTestUITests;
-			productReference = 0A4E745920D0279D0002D769 /* SpectrumCodingTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,11 +250,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					0A4E744D20D0279D0002D769 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0A4E743620D0279D0002D769;
-					};
-					0A4E745820D0279D0002D769 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0A4E743620D0279D0002D769;
@@ -315,7 +271,6 @@
 			targets = (
 				0A4E743620D0279D0002D769 /* SpectrumCodingTest */,
 				0A4E744D20D0279D0002D769 /* SpectrumCodingTestTests */,
-				0A4E745820D0279D0002D769 /* SpectrumCodingTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,22 +280,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD9024720D3077B002CA76E /* Assets.xcassets in Resources */,
 				0A4E749A20D20D270002D769 /* README.md in Resources */,
-				0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */,
-				0A4E744520D0279D0002D769 /* Assets.xcassets in Resources */,
-				0A4E748B20D199190002D769 /* ValidateView.xib in Resources */,
+				0A4E748B20D199190002D769 /* ValidateControl.xib in Resources */,
 				0A4E744020D0279D0002D769 /* Main.storyboard in Resources */,
+				0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A4E744C20D0279D0002D769 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A4E745720D0279D0002D769 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,7 +310,7 @@
 				0A4E748320D0B5A10002D769 /* UsernameValidator.swift in Sources */,
 				0A4E747F20D0A3660002D769 /* LetterAndNumberValidator.swift in Sources */,
 				0A4E743B20D0279D0002D769 /* AppDelegate.swift in Sources */,
-				0A4E748920D198F50002D769 /* ValidateView.swift in Sources */,
+				0A4E748920D198F50002D769 /* ValidateControl.swift in Sources */,
 				0A4E747820D0999C0002D769 /* ValidatorProtocol.swift in Sources */,
 				0A4E744320D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld in Sources */,
 				0A4E749C20D2BE840002D769 /* SequenceValidator.swift in Sources */,
@@ -380,14 +328,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A4E745520D0279D0002D769 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A4E745E20D0279D0002D769 /* SpectrumCodingTestUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -395,11 +335,6 @@
 			isa = PBXTargetDependency;
 			target = 0A4E743620D0279D0002D769 /* SpectrumCodingTest */;
 			targetProxy = 0A4E744F20D0279D0002D769 /* PBXContainerItemProxy */;
-		};
-		0A4E745B20D0279D0002D769 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A4E743620D0279D0002D769 /* SpectrumCodingTest */;
-			targetProxy = 0A4E745A20D0279D0002D769 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SpectrumCodingTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SpectrumCodingTest/Infrastructure/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SpectrumCodingTest;
@@ -552,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SpectrumCodingTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SpectrumCodingTest/Infrastructure/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SpectrumCodingTest;
@@ -596,38 +531,6 @@
 			};
 			name = Release;
 		};
-		0A4E746920D0279D0002D769 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C9XNX575S2;
-				INFOPLIST_FILE = SpectrumCodingTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SpectrumCodingTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpectrumCodingTest;
-			};
-			name = Debug;
-		};
-		0A4E746A20D0279D0002D769 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C9XNX575S2;
-				INFOPLIST_FILE = SpectrumCodingTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevinscardina.SpectrumCodingTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpectrumCodingTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -654,15 +557,6 @@
 			buildConfigurations = (
 				0A4E746620D0279D0002D769 /* Debug */,
 				0A4E746720D0279D0002D769 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A4E746820D0279D0002D769 /* Build configuration list for PBXNativeTarget "SpectrumCodingTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A4E746920D0279D0002D769 /* Debug */,
-				0A4E746A20D0279D0002D769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
