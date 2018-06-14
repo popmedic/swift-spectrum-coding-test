@@ -20,9 +20,19 @@ class UserManagerCoreData: UserManagerProtocol {
             }
         })
     }
-    
+    /**
+     creates a new user
+     
+     - parameters:
+         - username: the user name to create
+         - password: the password to store for the user
+         - image: the image to store for the user (BLOB)
+         - completion: a block of code to run when the create user is finished. The block
+         has an `error` passed in.  If the `error` is `nil` then the create operation successed,
+         otherwise check the `error` for more details.
+     */
     func createUser(username:String, password:String, image:Data?, completion:((NSError?)->Void)?) {
-        let entity = NSEntityDescription.entity(forEntityName: "User", in: container.viewContext)!
+        let entity = NSEntityDescription.entity(forEntityName: "UserEntity", in: container.viewContext)!
         let user = NSManagedObject(entity: entity, insertInto: container.viewContext)
         
         user.setValue(username, forKeyPath: "username")
@@ -41,13 +51,13 @@ class UserManagerCoreData: UserManagerProtocol {
         }
     }
     
-    func readUser(withPredicate:NSPredicate?, completion:((_ users:[SCTUser], _ error:NSError?)->Void)?) {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
+    private func readUser(withPredicate:NSPredicate?, completion:((_ users:[User], _ error:NSError?)->Void)?) {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "UserEntity")
         fetchRequest.predicate = withPredicate
         
         do {
             let users = try container.viewContext.fetch(fetchRequest)
-            var res = [SCTUser]()
+            var res = [User]()
             for user in users {
                 let id = user.objectID.uriRepresentation()
                 let username = user.value(forKey: "username") as? String ?? ""
@@ -67,12 +77,23 @@ class UserManagerCoreData: UserManagerProtocol {
         }
     }
     
-    func readUser(id:Any, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?) {
+    /**
+     gets a user with the given id
+     
+     - parameters:
+         - id: the id of the user
+         - completion: a block of code to run when the create user is finished. The block
+         has an `user` and `error` passed in.  If the `user` is `nil`, then the given `id`
+         does not exist, otherwise the `user` will contain a Tuple of user information.
+         If the error is nil then the create operation successed, otherwise check the
+         error for more details.
+     */
+    func readUser(id:Any, completion:((_ user:User?, _ error:NSError?)->Void)?) {
         if let id = id as? URL {
             if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(
                 forURIRepresentation: id) {
                 let user = self.container.viewContext.object(with:managedObjectID)
-                let res = SCTUser(
+                let res = User(
                     id: id,
                     username: user.value(forKey: "username") as? String ?? "",
                     password: user.value(forKey: "password") as? String ?? "",
@@ -86,7 +107,18 @@ class UserManagerCoreData: UserManagerProtocol {
         completion?(nil, nil)
     }
     
-    func readUser(username:String, completion:((_ user:SCTUser?, _ error:NSError?)->Void)?) {
+    /**
+     gets a user with the given username
+     
+     - parameters:
+         - username: the username of the user
+         - completion: a block of code to run when the create user is finished. The block
+         has an `user` and `error` passed in.  If the `user` is `nil`, then the given `username`
+         does not exist, otherwise the `user` will contain a Tuple of user information.
+         If the error is nil then the create operation successed, otherwise check the
+         error for more details.
+     */
+    func readUser(username:String, completion:((_ user:User?, _ error:NSError?)->Void)?) {
         self.readUser(withPredicate: NSPredicate(format: "%K == %@", "username", username)) { (users, error) in
             if let error = error {
                 completion?(nil, error)
@@ -101,10 +133,29 @@ class UserManagerCoreData: UserManagerProtocol {
         }
     }
     
-    func readAllUsers(completion:((_ users:[SCTUser], _ error:NSError?)->Void)?) {
+    /**
+     gets all users
+     
+     - parameters:
+         - username: the username of the user
+         - completion: a block of code to run when the create user is finished. The block
+         has an `users` and `error` passed in.  The `users` will contain an array Tuples of
+         user information. If the error is nil then the create operation successed, otherwise
+         check the error for more details.
+     */
+    func readAllUsers(completion:((_ users:[User], _ error:NSError?)->Void)?) {
         self.readUser(withPredicate: nil, completion: completion)
     }
     
+    /**
+     updates an user based on id
+     
+     - parameters:
+         - id: the id of the user
+         - completion: a block of code to run when the create user is finished. The block
+         has an `error` passed in. If the error is nil then the create operation successed,
+         otherwise check the error for more details.
+     */
     func updateUser(id: Any, username:String?, password:String?, image:Data?, completion:((NSError?)->Void)?) {
         if let id = id as? URL {
             if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(
@@ -126,6 +177,18 @@ class UserManagerCoreData: UserManagerProtocol {
         completion?(nil)
     }
     
+    /**
+     deletes an user based on id
+     
+     - parameters:
+         - id: the id of the user to delete
+         - username: the username to set with this user id, if nil don't change
+         - password: the password to set with this user id, if nil don't change.
+         - image: the image to set with this user id, if nil don't change.
+         - completion: a block of code to run when the create user is finished. The block
+         has an `error` passed in. If the error is nil then the create operation successed,
+         otherwise check the error for more details.
+     */
     func deleteUser(id: Any, completion:((NSError?)->Void)?) {
         if let id = id as? URL {
             if let managedObjectID = self.container.persistentStoreCoordinator.managedObjectID(

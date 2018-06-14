@@ -17,7 +17,7 @@ class UsersMasterViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBAction func unwindToUsersViewController(segue:UIStoryboardSegue) { }
     
-    var users:[SCTUser]?
+    var users:[User]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,28 +36,39 @@ class UsersMasterViewController: UIViewController {
         if let destination = (segue.destination as? UINavigationController)?.visibleViewController as? UsersDetailViewController,
            let indexPath = tableView.indexPathForSelectedRow,
            let identifier = segue.identifier {
+            // if loading the detail view for editing an existing user, set the user id in
+            // the detail view controller to indicate that it is in Edit mode
             if identifier == "ShowDetailSegueToEdit" {
                 if let users = self.users {
                     destination.userID = users[indexPath.row].id
                 }
             } else if identifier == "ShowDetailSegueToAdd" {
+                // if we are loading the detail view to create a new user, nil out the user id
                 destination.userID = nil
             }
         }
     }
     
+    /**
+     reloads the model (users) and the table view
+     */
     func reload() {
+        // get all the users
         userManager.readAllUsers() { (users, error) in
+            // if we got an error, show the user
             if let error = error {
                 self.showAlertOk(title: "Read All Users Error", message: error.localizedDescription)
                 return
             }
+            // update the model
             self.users = users
         }
+        // reload the table view
         self.tableView.reloadData()
-        self.collapseDetailViewController = true
     }
 }
+
+// MARK: - master view controllers implementation of table view delegete and datasource
 
 extension UsersMasterViewController:  UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,12 +95,15 @@ extension UsersMasterViewController:  UITableViewDelegate, UITableViewDataSource
     }
 }
 
+// MARK: - master view controllers implementation of split view controller delegate
+
 extension UsersMasterViewController: UISplitViewControllerDelegate {
     func splitViewController(
         _ splitViewController: UISplitViewController,
         collapseSecondary secondaryViewController: UIViewController,
         onto primaryViewController: UIViewController
     ) -> Bool {
+        // makes it so that on smaller devices we start with the master view controller
         return self.collapseDetailViewController
     }
 }

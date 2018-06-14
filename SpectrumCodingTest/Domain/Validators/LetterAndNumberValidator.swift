@@ -8,11 +8,11 @@
 
 import Foundation
 
-/*
+/**
  validates that a string containes **only** letters and numbers
  */
 struct LetterAndNumberValidator: ValidatorProtocol {
-    /*
+    /**
      validates that a string containes **only** letters and numbers
  
      - parameters:

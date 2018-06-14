@@ -8,7 +8,17 @@
 
 import UIKit
 
+/**
+ extension to UIViewController for easily showing an Ok alert message.
+ */
 extension UIViewController {
+    /**
+     shows an alert controller with an "Ok" button
+     
+     - parameters:
+         - title: title to use with the alert dialog
+         - message: message to show in the alert dialog
+     */
     func showAlertOk(title:String?, message:String?) {
         let alert = UIAlertController(
             title: title,

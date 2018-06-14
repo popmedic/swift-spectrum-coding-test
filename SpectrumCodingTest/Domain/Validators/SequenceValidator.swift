@@ -17,12 +17,11 @@ import Foundation
         values of an array of indices into the string being validated
     2. if the current indexed character is empty in history, then create a
         new array indices and add the current index
-    3. if the current index does exist
-        A. see if any of the last substrings is the same as the substring
-            current index to distance of last substring.
-            If they are the same, then it has contiguous substrings of the
-            same sequence, return false. If it gets thru the entire string
-            without returning, then return true.
+    3. if the current index does exist, see if any of the last substrings
+        is the same as the substring current index to distance of last
+        substring. If they are the same, then it has contiguous substrings
+        of the same sequence, return false. If it gets thru the entire
+        string without returning, then return true.
  */
 struct SequenceValidator: ValidatorProtocol {
     var allowDuplicateLetter:Bool

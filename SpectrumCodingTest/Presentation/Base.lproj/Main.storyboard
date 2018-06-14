@@ -268,11 +268,11 @@
                                     <constraint firstAttribute="height" constant="52" id="vIz-Fi-Ncs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Add User">
+                                <state key="normal" title="Create User">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="addUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="Etj-Sg-Go8"/>
+                                    <action selector="createUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="69W-2D-HTT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,8 +298,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="User Details" id="plb-qa-Bx7"/>
                     <connections>
-                        <outlet property="addUserButton" destination="RY8-5W-x8D" id="Hci-Go-Fi5"/>
                         <outlet property="between5And12ValidateControl" destination="yBs-70-eAX" id="n3b-nw-cqZ"/>
+                        <outlet property="createUserButton" destination="RY8-5W-x8D" id="nCv-HM-Loi"/>
                         <outlet property="deleteUserButton" destination="K2V-0d-L5z" id="a1Z-YP-6Q1"/>
                         <outlet property="imageButton" destination="8EJ-ya-AAQ" id="P0a-NZ-o9y"/>
                         <outlet property="lettersAndDigitsValidateControl" destination="yoB-tf-MSc" id="fZe-d9-NKm"/>

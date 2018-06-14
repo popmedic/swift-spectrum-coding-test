@@ -22,32 +22,38 @@ class UsersDetailViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var updateUserButton: UIButton!
     @IBOutlet weak var deleteUserButton: UIButton!
-    @IBOutlet weak var addUserButton: UIButton!
+    @IBOutlet weak var createUserButton: UIButton!
     @IBOutlet weak var usernameValidationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // adds a button to the display view for getting back
         self.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
         self.navigationItem.leftItemsSupplementBackButton = true
         
+        // handle moving the buttons and scrollview when keyboard is shown
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.keyboardNotification(notification:)),
             name: NSNotification.Name.UIKeyboardWillChangeFrame,
             object: nil
         )
+        
+        // add a gesture recognizer for hiding the keyboard when user taps outside text field
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
         
-        self.between5And12ValidateControl.validators.append(LengthValidator.init(range: 5..<13))
+        // add validators to the validate controls
+        self.between5And12ValidateControl.validators.append(LengthValidator(range: 5..<13))
         self.lettersAndDigitsValidateControl.validators.append(CharSetValidator(charset: CharacterSet.alphanumerics))
         self.lettersAndDigitsValidateControl.validators.append(LetterAndNumberValidator())
         self.sameSequenceValidateControl.validators.append(SequenceValidator(true))
         
+        // configure the view, make the detail view blank if unable to configure
         self.view.isHidden = !configureView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        // remove the keyboard observer
         NotificationCenter.default.removeObserver(
             self,
             name: NSNotification.Name.UIKeyboardWillChangeFrame,
@@ -57,27 +63,30 @@ class UsersDetailViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func imageButtonAction(_ sender: Any) {
         self.endEditing()
+        // show an alert to see if user want to use their galery or
+        // camera to add a user image
         self.showImageAlert()
     }
     
     @IBAction func updateUserButtonAction(_ sender: Any) {
         self.endEditing()
-        
+        // update the user information
         self.userManager.updateUser(
             id: self.userID!,
             username: self.usernameTextField.text,
             password: self.passwordTextField.text,
             image: UIImagePNGRepresentation(self.imageButton.backgroundImage(for: .normal)!)
         ) { (error) in
+            // on error display an alert to the user
             if let error = error {
                 self.showAlertOk(title: "Update User Error", message: error.localizedDescription)
                 return
             }
+            // no error, reload the master view controller to show the new user
             if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
                 .viewControllers[0] as? UsersMasterViewController {
                 usersViewController.reload()
@@ -87,11 +96,14 @@ class UsersDetailViewController: UIViewController {
     
     @IBAction func deleteUserButtonAction(_ sender: Any) {
         if let userID = self.userID {
+            // delete the user
             self.userManager.deleteUser(id: userID) { (error) in
+                // on error display an alert to the user
                 if let error = error {
                     self.showAlertOk(title: "Delete User Error", message: error.localizedDescription)
                     return
                 }
+                // no error, reload the master view controller
                 if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
                     .viewControllers[0] as? UsersMasterViewController {
                     usersViewController.reload()
@@ -101,24 +113,30 @@ class UsersDetailViewController: UIViewController {
         }
     }
     
-    @IBAction func addUserButtonAction(_ sender: Any) {
+    @IBAction func createUserButtonAction(_ sender: Any) {
         self.endEditing()
-        
+        // create a user
         userManager.createUser(
             username: self.usernameTextField.text!,
             password: self.passwordTextField.text!,
             image: UIImagePNGRepresentation(self.imageButton.backgroundImage(for: .normal)!)
         ) { (error) in
+            // on error display an alert to the user
             if let error = error {
                 self.showAlertOk(title: "Create User Error", message: error.localizedDescription)
                 return
             }
+            // no error, get the new userID using the username so we can turn the view
+            // into an edit view with the new user set for editing
             if let username = self.usernameTextField.text {
+                //
                 self.userManager.readUser(username: username, completion: { (user, error) in
+                    // on error display an alert to the user
                     if let error = error {
                         self.showAlertOk(title: "Update/Read User Error", message: error.localizedDescription)
                         return
                     }
+                    // no error, turn the view into an edit view with the new user set for editing
                     if let usersViewController = (self.splitViewController?.viewControllers[0] as? UINavigationController)?
                         .viewControllers[0] as? UsersMasterViewController {
                         usersViewController.reload()
@@ -132,6 +150,13 @@ class UsersDetailViewController: UIViewController {
         }
     }
     
+    /**
+     validate the password using the string in the password text field,
+     and the 3 validator views.
+ 
+     - returns:
+     true if all are valid, false if anyone fails
+     */
     func isValidPassword() -> Bool {
         let string = self.passwordTextField.text ?? ""
         self.lettersAndDigitsValidateControl.validate(string: string)
@@ -142,35 +167,57 @@ class UsersDetailViewController: UIViewController {
             self.sameSequenceValidateControl.isValid
     }
 
+    /**
+     validate the username using the string in the username text field,
+     and the username validator, also sets the username validation label
+     text to indicate why the username is invalid
+     
+     - returns:
+     true if valid, false if invalid
+     */
     func isValidUsername() -> Bool {
         let text = usernameTextField.text ?? ""
+        // make sure the username has some characters
         guard text.count > 0 else {
             self.usernameValidationLabel.text = "username must be filled out"
             return false
         }
+        // make sure it does not already exist
         if !UsernameValidator(userPersist: self.userManager).isValid(string: text) {
             self.usernameValidationLabel.text = "username already exists"
             return false
         }
+        // if it is valid clear out the indicator text
         self.usernameValidationLabel.text = ""
         return true
     }
-    
+    /**
+     handle when the username or password text field change by validating
+     the text field
+     */
     @objc func textFieldDidChange() {
         let validPassword = self.isValidPassword()
+        // not allowing username edits right now, so only validate the
+        // if configured for create
         var validUsername = true
         if !self.isEdit {
             validUsername = self.isValidUsername()
         }
         self.buttonEnabled = validPassword && validUsername
     }
-    
+    /**
+     handle end editing to hide keyboard
+     */
     @objc func endEditing() {
         self.view.endEditing(true)
     }
-    
+    /**
+     handle showing/hiding of the keyboard by adjusting the bottom
+     constraints to the height of the keyboard
+     */
     @objc func keyboardNotification(notification: NSNotification) {
         if let userInfo = notification.userInfo {
+            // compute keyboard frame size and set up animation
             let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
             let endFrameY = endFrame?.origin.y ?? 0
             let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
@@ -186,16 +233,19 @@ class UsersDetailViewController: UIViewController {
                     constraint.constant = (endFrame?.size.height ?? 0.0) * -1.0
                 }
             }
+            // trigger the animation
             UIView.animate(withDuration: duration,
                            delay: TimeInterval(0),
                            options: animationCurve,
-                           animations: { self.view.layoutIfNeeded() },
+                           animations: {
+                                self.view.layoutIfNeeded()
+                           },
                            completion: nil)
         }
     }
 }
 
-// MARK: - Camera and Galery
+// MARK: - detail view controllers implementation for image picking
 
 extension UsersDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -209,6 +259,10 @@ extension UsersDetailViewController: UIImagePickerControllerDelegate, UINavigati
         self.dismiss(animated: true, completion: nil)
     }
     
+    /**
+     shows an alert (action sheet on iphone/alert on ipad) so user can select to
+     get the image from the gallery or from the camera
+     */
     func showImageAlert() {
         let alert = UIAlertController(
             title: nil,
@@ -258,21 +312,19 @@ extension UsersDetailViewController: UIImagePickerControllerDelegate, UINavigati
     }
 }
 
-
-
 // MARK: - View configuration for Create user to Edit user
 
 extension UsersDetailViewController {
     private var buttonEnabled:Bool {
         get {
-            return self.updateUserButton.isEnabled
+            return self.isEdit ? self.updateUserButton.isEnabled : self.createUserButton.isEnabled
         }
         set(value) {
             let userButton:UIButton!
             if self.isEdit {
                 userButton = self.updateUserButton
             } else {
-                userButton = self.addUserButton
+                userButton = self.createUserButton
             }
             userButton.isEnabled = value
             if value {
@@ -291,15 +343,15 @@ extension UsersDetailViewController {
         if let userID = self.userID {
             return configureEditView(userID:userID)
         } else {
-            return configureAddView()
+            return configureCreateView()
         }
     }
-    private func configureAddView() -> Bool {
+    private func configureCreateView() -> Bool {
         self.navigationItem.title = "Create User"
         
         self.updateUserButton.isHidden = true
         self.deleteUserButton.isHidden = true
-        self.addUserButton.isHidden = false
+        self.createUserButton.isHidden = false
         
         self.usernameTextField.isEnabled = true
         self.usernameTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
@@ -328,7 +380,7 @@ extension UsersDetailViewController {
         })
         self.updateUserButton.isHidden = false
         self.deleteUserButton.isHidden = false
-        self.addUserButton.isHidden = true
+        self.createUserButton.isHidden = true
         
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         self.usernameTextField.isEnabled = false
