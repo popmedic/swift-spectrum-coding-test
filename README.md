@@ -74,6 +74,14 @@ archive \
 export_
 ```
 
+**Autobuild**
+
+`autobuild` will analyze, build, test, archive, and export project.
+
+```
+./autobuild.sh
+```
+
 ## Stack
 
 - Interface Builder/XCode
