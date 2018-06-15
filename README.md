@@ -66,7 +66,7 @@ archive
 
 **Export**
 
-This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and chance the exportOptions.plist team identifier to your own. 
+This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and change the exportOptions.plist team identifier to your own. 
 
 ```
 source configure.sh && \
