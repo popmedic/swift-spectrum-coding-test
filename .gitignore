@@ -110,4 +110,5 @@ fastlane/test_output
 ### Kevin Customized ###
 
 artifact/*
-!artifact/adhoc/*
+!artifact/adhoc/
+!artifact/adhoc/*.ipa
