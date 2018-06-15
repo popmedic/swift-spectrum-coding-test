@@ -91,12 +91,22 @@ export_
 
 4 tier architecture, project divided into the following tiers:
 
+```
+Presentation(View)  
+        ↕️️  
+Application(Controller)
+        ↕️ 
+Domain(Controller)
+        ↕️
+Infrastructure(Models/Services)
+```
+
 - Presentation
     - this layer is for everything the user sees, typically the view layer.
 - Application
     - this layer updates the Presentation layer and handles events/requests from the Presentation layer. Interacts with Domain layer to retreive data from different Infrastructures
 - Domain
-    - abtraction layer used to de-couple the Infrastructure allowing easily change between different services.
+    - this layer deals with getting information from the infrastructures for the Application.
 - Infrastucture
     - Different services used for models.  Currently, only supporting Core Data.
 
