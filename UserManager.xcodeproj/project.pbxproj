@@ -30,6 +30,7 @@
 		0AD9024720D3077B002CA76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E744420D0279D0002D769 /* Assets.xcassets */; };
 		0AD9024A20D33A4F002CA76E /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AD9024920D33A4F002CA76E /* exportOptions.plist */; };
 		0AD9025320D366C9002CA76E /* UserManagerCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9025220D366C9002CA76E /* UserManagerCoreDataTests.swift */; };
+		0AE7524D20D40CB20075DC17 /* exportAdhocOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AE7524C20D40CB20075DC17 /* exportAdhocOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		0AD9025020D344E8002CA76E /* archive.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = archive.sh; sourceTree = "<group>"; };
 		0AD9025120D3453E002CA76E /* export_.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = export_.sh; sourceTree = "<group>"; };
 		0AD9025220D366C9002CA76E /* UserManagerCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagerCoreDataTests.swift; sourceTree = "<group>"; };
+		0AE7524C20D40CB20075DC17 /* exportAdhocOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportAdhocOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD9024920D33A4F002CA76E /* exportOptions.plist */,
+				0AE7524C20D40CB20075DC17 /* exportAdhocOptions.plist */,
 				0AD9024820D32DBF002CA76E /* autobuild.sh */,
 				0AD9024C20D3433B002CA76E /* analyze.sh */,
 				0AD9024D20D34419002CA76E /* configure.sh */,
@@ -314,6 +317,7 @@
 				0A4E748B20D199190002D769 /* ValidateControl.xib in Resources */,
 				0A4E744020D0279D0002D769 /* Main.storyboard in Resources */,
 				0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */,
+				0AE7524D20D40CB20075DC17 /* exportAdhocOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

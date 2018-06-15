@@ -11,7 +11,7 @@ archive(){
         -project "${PROJ}" \
         -scheme "${SCHEME}" \
         -sdk iphoneos \
-        -configuration AppStoreDistribution \
+        -configuration Release \
         -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
         archive \
         CODE_SIGN_IDENTITY="" \

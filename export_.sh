@@ -10,6 +10,6 @@ export_(){
     xcodebuild \
         -exportArchive \
         -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
-        -exportOptionsPlist exportOptions.plist \
+        -exportOptionsPlist exportAdhocOptions.plist \
         -exportPath "${ARTIFACTDIR}"
 }
