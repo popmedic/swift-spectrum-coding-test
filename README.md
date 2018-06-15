@@ -1,11 +1,11 @@
-# Spectrum's Coding Test for iOS
+# User Manager (Local) for iOS
 
 [![Build Status](https://travis-ci.org/popmedic/swift-spectrum-coding-test.svg?branch=master)](https://travis-ci.org/popmedic/swift-spectrum-coding-test)
 [![codecov](https://codecov.io/gh/popmedic/swift-spectrum-coding-test/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-spectrum-coding-test)
 
 ## Objective
 
-To fulfill the requirements in [this document](My_Spectrum_-_Xamarin_Test.pdf).
+To fulfill the requirements in [this document](test.pdf).
 
 ## Requirements
 
@@ -16,14 +16,14 @@ To fulfill the requirements in [this document](My_Spectrum_-_Xamarin_Test.pdf).
 
 ### From XCode
 
-1) Load the project file [SpectrumCodingTest.xcodeproj](SpectrumCodingTest.xcodeproj/) into XCode  
-2) Select the SpectrumCodingTest scheme
+1) Load the project file [UserManager.xcodeproj](UserManager.xcodeproj/) into XCode
+2) Select the UserManager scheme
 3) Select what device you would like to run on
 4) Click on the XCode's run button
 
 ### From the Terminal
 
-From the terminal you can analyze, build, test, archive, export, or autobuild the entire project.  Start by `cd` to the project directory (the directory with [SpectrumCodingTest.xcodeproj](SpectrumCodingTest.xcodeproj/) in it)
+From the terminal you can analyze, build, test, archive, export, or autobuild the entire project.  Start by `cd` to the project directory (the directory with [UserManager.xcodeproj](UserManager.xcodeproj/) in it)
 
 **Analyze**
 
@@ -57,7 +57,7 @@ test
 
 **Archive**
 
-This will generate a non-codesigned archive of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.xcarchive`.
+This will generate a non-codesigned archive of the project in `${PROJECT_DIR}/archive/UserManager.xcarchive`.
 
 ```
 source configure.sh && \
@@ -67,7 +67,7 @@ archive
 
 **Export**
 
-This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and change the exportOptions.plist team identifier to your own. 
+This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/UserManager.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and change the exportOptions.plist team identifier to your own. 
 
 ```
 source configure.sh && \

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  analyze.sh
-#  SpectrumCodingTest
+#  UserManager
 #
 #  Created by Kevin Scardina on 6/14/18.
 #  Copyright © 2018 Kevin Scardina. All rights reserved.

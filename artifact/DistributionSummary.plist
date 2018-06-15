@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SpectrumCodingTest.ipa</key>
+	<key>UserManager.ipa</key>
 	<array>
 		<dict>
 			<key>architectures</key>
@@ -22,7 +22,7 @@
 				<string>iOS Distribution</string>
 			</dict>
 			<key>name</key>
-			<string>SpectrumCodingTest.app</string>
+			<string>UserManager.app</string>
 			<key>symbols</key>
 			<true/>
 			<key>team</key>
