@@ -116,15 +116,9 @@ Infrastructure(Models/Services)
 ## Screen Shots
 
 ![iPad](ScreenShots/ss1.png)
-
 ![iPad](ScreenShots/ss2.png)
-
 ![iPhone](ScreenShots/ss7.png)
-
 ![iPhone](ScreenShots/ss3.png)
-
 ![iPhone](ScreenShots/ss4.png)
-
 ![iPhone](ScreenShots/ss6.png)
-
 ![iPhone](ScreenShots/ss5.png)
