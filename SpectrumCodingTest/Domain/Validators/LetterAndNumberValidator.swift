@@ -23,7 +23,11 @@ struct LetterAndNumberValidator: ValidatorProtocol {
      */
     func isValid(string: String) -> Bool {
         let charSet = CharacterSet(charactersIn: string)
-        return !charSet.isDisjoint(with: CharacterSet.decimalDigits) &&
-               !charSet.isDisjoint(with: CharacterSet.letters)
+        var numbers = CharacterSet.decimalDigits
+        numbers.remove(".")
+        var letters = CharacterSet.letters
+        letters.remove(".")
+        return !charSet.isDisjoint(with: numbers) &&
+               !charSet.isDisjoint(with: letters)
     }
 }

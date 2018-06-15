@@ -13,7 +13,7 @@ import Foundation
  and length > 1
  */
 struct UsernameValidator: ValidatorProtocol {
-    let userPersist:UserManagerProtocol
+    let userManager:UserManagerProtocol
     /**
      initializes a new UsernameValidator with the given UserManager
  
@@ -24,8 +24,8 @@ struct UsernameValidator: ValidatorProtocol {
      a new UsernameValidator that will check if a username exists
      using the given UserManager
      */
-    init(userPersist:UserManagerProtocol) {
-        self.userPersist = userPersist
+    init(userManager:UserManagerProtocol) {
+        self.userManager = userManager
     }
     /*
      validates that a username does not exist, and length > 1
@@ -38,7 +38,7 @@ struct UsernameValidator: ValidatorProtocol {
      */
     func isValid(string: String) -> Bool {
         var exists = true
-        userPersist.readUser(username: string) { (user, error) in
+        userManager.readUser(username: string) { (user, error) in
             if let error = error {
                 print(error)
                 exists = true

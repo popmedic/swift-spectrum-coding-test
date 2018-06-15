@@ -183,7 +183,7 @@ class UsersDetailViewController: UIViewController {
             return false
         }
         // make sure it does not already exist
-        if !UsernameValidator(userPersist: self.userManager).isValid(string: text) {
+        if !UsernameValidator(userManager: self.userManager).isValid(string: text) {
             self.usernameValidationLabel.text = "username already exists"
             return false
         }

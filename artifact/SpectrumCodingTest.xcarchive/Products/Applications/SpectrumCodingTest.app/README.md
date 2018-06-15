@@ -1,5 +1,8 @@
 # Spectrum's Coding Test for iOS
 
+[![Build Status](https://travis-ci.org/popmedic/swift-spectrum-coding-test.svg?branch=master)](https://travis-ci.org/popmedic/swift-spectrum-coding-test)
+[![codecov](https://codecov.io/gh/popmedic/swift-alpc/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-spectrum-coding-test)
+
 ## Objective
 
 To fulfill the requirements in [this document](My_Spectrum_-_Xamarin_Test.pdf).
@@ -64,7 +67,7 @@ archive
 
 **Export**
 
-This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and chance the exportOptions.plist team identifier to your own. 
+This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and change the exportOptions.plist team identifier to your own. 
 
 ```
 source configure.sh && \
@@ -84,19 +87,29 @@ export_
 
 ## Stack
 
-- Interface Builder/XCode
+- Interface Builder/XCode (Swift 4.0)
 - Core Data
 
 ## Architecture
 
 4 tier architecture, project divided into the following tiers:
 
+```
+Presentation(View)  
+        ↕️️  
+Application(Controller)
+        ↕️ 
+Domain(Controller)
+        ↕️
+Infrastructure(Models/Services)
+```
+
 - Presentation
     - this layer is for everything the user sees, typically the view layer.
 - Application
     - this layer updates the Presentation layer and handles events/requests from the Presentation layer. Interacts with Domain layer to retreive data from different Infrastructures
 - Domain
-    - abtraction layer used to de-couple the Infrastructure allowing easily change between different services.
+    - this layer deals with getting information from the infrastructures for the Application.
 - Infrastucture
     - Different services used for models.  Currently, only supporting Core Data.
 
