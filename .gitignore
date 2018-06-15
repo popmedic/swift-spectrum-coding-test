@@ -107,8 +107,10 @@ fastlane/test_output
 
 # End of https://www.gitignore.io/api/xcode,swift,macos
 
-### Kevin Customized ###
+### Needed for required artifact ###
 
 artifact/*
 !artifact/adhoc/
 !artifact/adhoc/*.ipa
+!artifact/simulator/
+!artifact/simulator/*.app/

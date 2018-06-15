@@ -12,7 +12,8 @@ archive(){
         -scheme "${SCHEME}" \
         -sdk iphoneos \
         -configuration AppStoreDistribution \
-        -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
+        -archivePath "${ARTIFACTDIR}${ARCHIVE}" \
+        -derivedDataPath "${BUILDDIR}" \
         archive \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO

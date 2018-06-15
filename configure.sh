@@ -8,7 +8,7 @@
 
 BUILDDIR="build/"
 ARTIFACTDIR="artifact/"
-ARTIFACT="UserManager.xcarchive"
+ARCHIVE="UserManager.xcarchive"
 SCHEME="UserManager"
 PROJ="UserManager.xcodeproj"
 

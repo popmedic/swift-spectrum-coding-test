@@ -10,6 +10,7 @@ build(){
     xcodebuild \
         -project "${PROJ}" \
         -scheme "${SCHEME}" \
+        -derivedDataPath "${BUILDDIR}" \
         build \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO

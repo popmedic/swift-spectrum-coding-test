@@ -1,93 +1,93 @@
-2018-06-15 15:32:49 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ff71ab53c20; archive(resolved)='<IDEArchive: 0x7ff71a935630>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team(resolved)='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
+2018-06-15 16:09:06 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7f898f46af10; archive(resolved)='<IDEArchive: 0x7f898a5c4ae0>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team(resolved)='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
 	Chain (11, self inclusive):
-	<IDEDistributionProcessingPipelineContext: 0x7ff71ab53c20; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionProcessingPipelineContext: 0x7ff71ab54990; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71abd7c90; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71aa6c6a0; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71aa59f00; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71aa6b680; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71ab7ec20; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71ac5e1b0; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71a950640; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='<IDEProvisioningBasicTeam 0x7ff71ab602f0: teamID: C9XNX575S2, teamName: (null)>'>
-	<IDEDistributionContext: 0x7ff71ab22e20; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ff71a88a5d0>', team='(null)'>
-	<IDEDistributionContext: 0x7ff71a936290; archive = '<IDEArchive: 0x7ff71a935630>', distributionMethod='(null)', team='(null)'>
-</IDEDistributionProcessingPipelineContext: 0x7ff71ab53c20>
-2018-06-15 15:32:49 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
-2018-06-15 15:32:49 +0000 [MT] Processing step: IDEDistributionCopyItemStep
-2018-06-15 15:32:49 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app'
-2018-06-15 15:32:49 +0000  >>> Copying /Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app 
-2018-06-15 15:32:49 +0000  copying file ./AppIcon20x20@2x.png ... 
-2018-06-15 15:32:49 +0000  3175 bytes for ./AppIcon20x20@2x.png
+	<IDEDistributionProcessingPipelineContext: 0x7f898f46af10; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionProcessingPipelineContext: 0x7f898f44d9e0; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f465ff0; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f31d8a0; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f512950; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f32a080; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f50edb0; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f508430; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898a5d8380; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='<IDEProvisioningBasicTeam 0x7f898f50aac0: teamID: C9XNX575S2, teamName: (null)>'>
+	<IDEDistributionContext: 0x7f898f124670; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7f898bfe7ab0>', team='(null)'>
+	<IDEDistributionContext: 0x7f898a5c5360; archive = '<IDEArchive: 0x7f898a5c4ae0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7f898f46af10>
+2018-06-15 16:09:06 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2018-06-15 16:09:06 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2018-06-15 16:09:06 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app'
+2018-06-15 16:09:06 +0000  >>> Copying /Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app 
+2018-06-15 16:09:06 +0000  copying file ./AppIcon20x20@2x.png ... 
+3175 bytes for ./AppIcon20x20@2x.png
 copying file ./AppIcon20x20@2x~ipad.png ... 
-2018-06-15 15:32:49 +0000  3175 bytes for ./AppIcon20x20@2x~ipad.png
-2018-06-15 15:32:49 +0000  copying file ./AppIcon20x20@3x.png ... 
-2018-06-15 15:32:49 +0000  5985 bytes for ./AppIcon20x20@3x.png
+3175 bytes for ./AppIcon20x20@2x~ipad.png
+copying file ./AppIcon20x20@3x.png ... 
+5985 bytes for ./AppIcon20x20@3x.png
 copying file ./AppIcon20x20~ipad.png ... 
-2018-06-15 15:32:49 +0000  1086 bytes for ./AppIcon20x20~ipad.png
+1086 bytes for ./AppIcon20x20~ipad.png
 copying file ./AppIcon29x29@2x.png ... 
-2018-06-15 15:32:49 +0000  5599 bytes for ./AppIcon29x29@2x.png
+5599 bytes for ./AppIcon29x29@2x.png
 copying file ./AppIcon29x29@2x~ipad.png ... 
-2018-06-15 15:32:49 +0000  5599 bytes for ./AppIcon29x29@2x~ipad.png
+5599 bytes for ./AppIcon29x29@2x~ipad.png
 copying file ./AppIcon29x29@3x.png ... 
-2018-06-15 15:32:49 +0000  11074 bytes for ./AppIcon29x29@3x.png
+11074 bytes for ./AppIcon29x29@3x.png
 copying file ./AppIcon29x29~ipad.png ... 
-2018-06-15 15:32:49 +0000  1938 bytes for ./AppIcon29x29~ipad.png
-2018-06-15 15:32:49 +0000  copying file ./AppIcon40x40@2x.png ... 
+1938 bytes for ./AppIcon29x29~ipad.png
+copying file ./AppIcon40x40@2x.png ... 
 9768 bytes for ./AppIcon40x40@2x.png
-2018-06-15 15:32:49 +0000  copying file ./AppIcon40x40@2x~ipad.png ... 
-2018-06-15 15:32:49 +0000  9768 bytes for ./AppIcon40x40@2x~ipad.png
+copying file ./AppIcon40x40@2x~ipad.png ... 
+9768 bytes for ./AppIcon40x40@2x~ipad.png
 copying file ./AppIcon40x40@3x.png ... 
-2018-06-15 15:32:49 +0000  17602 bytes for ./AppIcon40x40@3x.png
+17602 bytes for ./AppIcon40x40@3x.png
 copying file ./AppIcon40x40~ipad.png ... 
-2018-06-15 15:32:49 +0000  3175 bytes for ./AppIcon40x40~ipad.png
+3175 bytes for ./AppIcon40x40~ipad.png
 copying file ./AppIcon60x60@2x.png ... 
 17602 bytes for ./AppIcon60x60@2x.png
 copying file ./AppIcon60x60@3x.png ... 
-2018-06-15 15:32:49 +0000  32865 bytes for ./AppIcon60x60@3x.png
-2018-06-15 15:32:49 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+32865 bytes for ./AppIcon60x60@3x.png
+copying file ./AppIcon76x76@2x~ipad.png ... 
 26014 bytes for ./AppIcon76x76@2x~ipad.png
-2018-06-15 15:32:49 +0000  copying file ./AppIcon76x76~ipad.png ... 
-2018-06-15 15:32:49 +0000  9019 bytes for ./AppIcon76x76~ipad.png
+copying file ./AppIcon76x76~ipad.png ... 
+9019 bytes for ./AppIcon76x76~ipad.png
 copying file ./AppIcon83.5x83.5@2x~ipad.png ... 
-2018-06-15 15:32:49 +0000  29929 bytes for ./AppIcon83.5x83.5@2x~ipad.png
+29929 bytes for ./AppIcon83.5x83.5@2x~ipad.png
 copying file ./Assets.car ... 
-2018-06-15 15:32:49 +0000  616664 bytes for ./Assets.car
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  4335 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+616664 bytes for ./Assets.car
+copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:06 +0000  4335 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
 copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  4456 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
-2018-06-15 15:32:49 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+2018-06-15 16:09:06 +0000  4452 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
+832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
 copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  6673 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  6951 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
-copying file ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  10898 bytes for ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  11003 bytes for ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib
-copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
-2018-06-15 15:32:49 +0000  360 bytes for ./Base.lproj/Main.storyboardc/Info.plist
-2018-06-15 15:32:49 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  1835 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib
+832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:06 +0000  6685 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+2018-06-15 16:09:06 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
+2018-06-15 16:09:06 +0000  6936 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2018-06-15 16:09:06 +0000  copying file ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:06 +0000  10891 bytes for ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib
+copying file ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib ... 
+2018-06-15 16:09:06 +0000  11009 bytes for ./Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib
+2018-06-15 16:09:06 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2018-06-15 16:09:06 +0000  360 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2018-06-15 16:09:06 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:06 +0000  1835 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib
 copying file ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  1835 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib
-copying file ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:49 +0000  3195 bytes for ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib
+2018-06-15 16:09:06 +0000  1835 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib
+2018-06-15 16:09:06 +0000  copying file ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:06 +0000  3183 bytes for ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib
 copying file ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib ... 
-2018-06-15 15:32:49 +0000  3193 bytes for ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib
-2018-06-15 15:32:49 +0000  copying file ./exportAdhocOptions.plist ... 
-2018-06-15 15:32:49 +0000  140 bytes for ./exportAdhocOptions.plist
+2018-06-15 16:09:06 +0000  3198 bytes for ./Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib
+copying file ./exportAdhocOptions.plist ... 
+140 bytes for ./exportAdhocOptions.plist
 copying file ./exportOptions.plist ... 
-2018-06-15 15:32:49 +0000  85 bytes for ./exportOptions.plist
-2018-06-15 15:32:49 +0000  copying file ./Frameworks/libswiftCore.dylib ... 
-2018-06-15 15:32:49 +0000  102190104 bytes for ./Frameworks/libswiftCore.dylib
+2018-06-15 16:09:06 +0000  85 bytes for ./exportOptions.plist
+copying file ./Frameworks/libswiftCore.dylib ... 
+2018-06-15 16:09:06 +0000  102190104 bytes for ./Frameworks/libswiftCore.dylib
 copying file ./Frameworks/libswiftCoreData.dylib ... 
-2018-06-15 15:32:49 +0000  882138 bytes for ./Frameworks/libswiftCoreData.dylib
+2018-06-15 16:09:06 +0000  882138 bytes for ./Frameworks/libswiftCoreData.dylib
 copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
 288869 bytes for ./Frameworks/libswiftCoreFoundation.dylib
 copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
@@ -99,11 +99,11 @@ copying file ./Frameworks/libswiftDarwin.dylib ...
 copying file ./Frameworks/libswiftDispatch.dylib ... 
 3459837 bytes for ./Frameworks/libswiftDispatch.dylib
 copying file ./Frameworks/libswiftFoundation.dylib ... 
-2018-06-15 15:32:49 +0000  41486819 bytes for ./Frameworks/libswiftFoundation.dylib
-copying file ./Frameworks/libswiftMetal.dylib ... 
-2018-06-15 15:32:49 +0000  2018-06-15 15:32:49 +0000 [MT] /usr/bin/ditto exited with 0
+2018-06-15 16:09:07 +0000  41486819 bytes for ./Frameworks/libswiftFoundation.dylib
+2018-06-15 16:09:07 +0000  2018-06-15 16:09:07 +0000 [MT] /usr/bin/ditto exited with 0
 
-2018-06-15 15:32:50 +0000  510611 bytes for ./Frameworks/libswiftMetal.dylib
+2018-06-15 16:09:07 +0000  copying file ./Frameworks/libswiftMetal.dylib ... 
+510611 bytes for ./Frameworks/libswiftMetal.dylib
 copying file ./Frameworks/libswiftObjectiveC.dylib ... 
 692593 bytes for ./Frameworks/libswiftObjectiveC.dylib
 copying file ./Frameworks/libswiftos.dylib ... 
@@ -127,387 +127,382 @@ copying file ./UserManager.momd/SpectrumCodingTest.omo ...
 copying file ./UserManager.momd/VersionInfo.plist ... 
 227 bytes for ./UserManager.momd/VersionInfo.plist
 copying file ./ValidateControl.nib/objects-11.0+.nib ... 
-3949 bytes for ./ValidateControl.nib/objects-11.0+.nib
+3944 bytes for ./ValidateControl.nib/objects-11.0+.nib
 copying file ./ValidateControl.nib/runtime.nib ... 
-3282 bytes for ./ValidateControl.nib/runtime.nib
-2018-06-15 15:32:50 +0000  
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab6c730 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ff71a9a0920:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab73940 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ff71ab48440:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71a9a0000 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ff71710b8d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ac4e010 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ff717109b10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ac53890 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ff71ab405c0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab77ad0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ff71ab37550:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ac55350 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ff71ab50520:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71aa718a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ff71ab60950:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab715e0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ff71ab4c5d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71a9912e0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ff71aa509a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71a98d5e0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ff71aa52200:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab71240 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ff71aa53d40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab6ed00 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ff71aa51b00:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7ff71ab79aa0 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7ff71a935e40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'>
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionCompileBitcodeStep
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCompileBitcodeStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionCodeSlimmingStep
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionCopyBCSymbolMapsStep
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionSymbolsStep
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionAppThinningStep
-2018-06-15 15:32:50 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionODRStep
-2018-06-15 15:32:50 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab6c730 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ff71a9a0920:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab73940 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ff71ab48440:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71a9a0000 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ff71710b8d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ac4e010 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ff717109b10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ac53890 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ff71ab405c0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab77ad0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ff71ab37550:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ac55350 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ff71ab50520:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71aa718a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ff71ab60950:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab715e0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ff71ab4c5d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71a9912e0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ff71aa509a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71a98d5e0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ff71aa52200:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab71240 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ff71aa53d40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff71ab6ed00 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ff71aa51b00:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>
-2018-06-15 15:32:50 +0000 [MT] Running /usr/bin/xattr '-crs' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app'
-2018-06-15 15:32:53 +0000  
-2018-06-15 15:32:53 +0000  
-2018-06-15 15:32:53 +0000 [MT] /usr/bin/xattr exited with 0
-2018-06-15 15:32:53 +0000  
-2018-06-15 15:32:53 +0000  2018-06-15 15:32:53 +0000 [MT] Processing step: IDEDistributionCodesignStep
+3276 bytes for ./ValidateControl.nib/runtime.nib
+2018-06-15 16:09:07 +0000  
+2018-06-15 16:09:07 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0ec180 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f898f1685a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0eace0 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7f898f40a170:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f327220 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f898f40b3f0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0dd7e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f898f40ca70:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f426470 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f898f40e560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f2fb4f0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f898f40fe20:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0d6c50 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f898f40fa60:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f15aed0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f898f411650:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0f62b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f898f412040:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0ed900 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f898f413310:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f2fbef0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f898f415590:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f4259e0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f898f410e30:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f0e75c0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f898f414560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>
+2018-06-15 16:09:07 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7f898f507e40 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7f898a5c4f10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'>
+2018-06-15 16:09:07 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2018-06-15 16:09:07 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2018-06-15 16:09:07 +0000 [MT] Processing step: IDEDistributionCompileBitcodeStep
+2018-06-15 16:09:07 +0000 [MT] Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-06-15 16:09:07 +0000 [MT] Processing step: IDEDistributionCodeSlimmingStep
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2018-06-15 16:09:08 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionODRStep
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0ec180 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f898f1685a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0eace0 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7f898f40a170:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f327220 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f898f40b3f0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0dd7e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f898f40ca70:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f426470 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f898f40e560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f2fb4f0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f898f40fe20:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0d6c50 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f898f40fa60:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f15aed0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f898f411650:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0f62b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f898f412040:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0ed900 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f898f413310:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f2fbef0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f898f415590:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f4259e0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f898f410e30:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7f898f0e75c0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f898f414560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>
+2018-06-15 16:09:08 +0000 [MT] Running /usr/bin/xattr '-crs' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app'
+2018-06-15 16:09:08 +0000  
+2018-06-15 16:09:08 +0000  2018-06-15 16:09:08 +0000 [MT] /usr/bin/xattr exited with 0
 
-2018-06-15 15:32:53 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab6c730 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ff71a9a0920:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa7bce0>: {
-}
-2018-06-15 15:32:53 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab6c730 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ff71a9a0920:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>: {
-}
-2018-06-15 15:32:53 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab6c730 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ff71a9a0920:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsdxQlqW
-2018-06-15 15:32:53 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsdxQlqW' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCore.dylib'
-2018-06-15 15:32:55 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  2018-06-15 15:32:55 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:08 +0000  2018-06-15 16:09:08 +0000  
 
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab73940 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ff71ab48440:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa8d320>: {
+2018-06-15 16:09:08 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2018-06-15 16:09:08 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0ec180 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f898f1685a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510730>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab73940 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ff71ab48440:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>: {
+2018-06-15 16:09:08 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0ec180 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f898f1685a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab73940 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ff71ab48440:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsaJIC1S
-2018-06-15 15:32:55 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsaJIC1S' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreData.dylib'
-2018-06-15 15:32:55 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreData.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreData]
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  2018-06-15 15:32:55 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:08 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0ec180 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7f898f1685a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsYlMJlW
+2018-06-15 16:09:08 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsYlMJlW' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCore.dylib'
+2018-06-15 16:09:09 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2018-06-15 16:09:09 +0000  2018-06-15 16:09:09 +0000  
 
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71a9a0000 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ff71710b8d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa6da10>: {
-}
-2018-06-15 15:32:55 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71a9a0000 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ff71710b8d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
-}
-2018-06-15 15:32:55 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71a9a0000 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ff71710b8d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsYEbVVB
-2018-06-15 15:32:55 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsYEbVVB' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'
-2018-06-15 15:32:55 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  2018-06-15 15:32:55 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:09 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:09 +0000  2018-06-15 16:09:09 +0000  
 
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ac4e010 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ff717109b10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa6da50>: {
+2018-06-15 16:09:09 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0eace0 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7f898f40a170:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f5107b0>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ac4e010 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ff717109b10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+2018-06-15 16:09:09 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0eace0 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7f898f40a170:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ac4e010 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ff717109b10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsNlyPoC
-2018-06-15 15:32:55 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsNlyPoC' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'
-2018-06-15 15:32:55 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  2018-06-15 15:32:55 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:09 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0eace0 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7f898f40a170:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreData.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsgPanU7
+2018-06-15 16:09:09 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsgPanU7' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreData.dylib'
+2018-06-15 16:09:10 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreData.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreData]
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 16:09:10 +0000  
 
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ac53890 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ff71ab405c0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa6faa0>: {
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f327220 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f898f40b3f0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510850>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ac53890 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ff71ab405c0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+2018-06-15 16:09:10 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f327220 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f898f40b3f0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ac53890 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ff71ab405c0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsZZoYNV
-2018-06-15 15:32:55 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsZZoYNV' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib'
-2018-06-15 15:32:55 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
-2018-06-15 15:32:55 +0000  2018-06-15 15:32:55 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:10 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f327220 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7f898f40b3f0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsgqgx5i
+2018-06-15 16:09:10 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsgqgx5i' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib'
+2018-06-15 16:09:10 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 16:09:10 +0000  
 
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000  
-2018-06-15 15:32:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab77ad0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ff71ab37550:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa89f20>: {
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0dd7e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f898f40ca70:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510940>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab77ad0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ff71ab37550:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>: {
+2018-06-15 16:09:10 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0dd7e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f898f40ca70:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
 }
-2018-06-15 15:32:55 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab77ad0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ff71ab37550:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsvCOh3u
-2018-06-15 15:32:55 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsvCOh3u' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftDarwin.dylib'
-2018-06-15 15:32:56 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000  2018-06-15 15:32:56 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:10 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0dd7e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7f898f40ca70:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsQG5sne
+2018-06-15 16:09:10 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsQG5sne' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib'
+2018-06-15 16:09:10 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  2018-06-15 16:09:10 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ac55350 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ff71ab50520:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa6fa50>: {
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f426470 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f898f40e560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f5109d0>: {
 }
-2018-06-15 15:32:56 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ac55350 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ff71ab50520:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>: {
+2018-06-15 16:09:10 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f426470 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f898f40e560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'>: {
 }
-2018-06-15 15:32:56 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ac55350 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ff71ab50520:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsLqXaNQ
-2018-06-15 15:32:56 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsLqXaNQ' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftDispatch.dylib'
-2018-06-15 15:32:56 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000  2018-06-15 15:32:56 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:10 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f426470 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7f898f40e560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsFeZb8e
+2018-06-15 16:09:10 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsFeZb8e' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib'
+2018-06-15 16:09:10 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  2018-06-15 16:09:10 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000  
-2018-06-15 15:32:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71aa718a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ff71ab60950:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa8bbf0>: {
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f2fb4f0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f898f40fe20:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510a50>: {
 }
-2018-06-15 15:32:56 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71aa718a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ff71ab60950:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>: {
+2018-06-15 16:09:10 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f2fb4f0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f898f40fe20:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'>: {
 }
-2018-06-15 15:32:56 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71aa718a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ff71ab60950:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsiPnWJ5
-2018-06-15 15:32:56 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsiPnWJ5' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftFoundation.dylib'
-2018-06-15 15:32:57 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
-2018-06-15 15:32:57 +0000  2018-06-15 15:32:57 +0000  
+2018-06-15 16:09:10 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f2fb4f0 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7f898f40fe20:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementscYZ6cu
+2018-06-15 16:09:10 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementscYZ6cu' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftDarwin.dylib'
+2018-06-15 16:09:10 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 16:09:10 +0000  
 
-2018-06-15 15:32:57 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 15:32:57 +0000  
+2018-06-15 16:09:10 +0000  
+2018-06-15 16:09:10 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0d6c50 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f898f40fa60:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510960>: {
+}
+2018-06-15 16:09:10 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0d6c50 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f898f40fa60:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2018-06-15 16:09:10 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0d6c50 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7f898f40fa60:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsNT4nGk
+2018-06-15 16:09:10 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsNT4nGk' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftDispatch.dylib'
+2018-06-15 16:09:11 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000  2018-06-15 16:09:11 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab715e0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ff71ab4c5d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa62fb0>: {
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f15aed0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f898f411650:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510c10>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab715e0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ff71ab4c5d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>: {
+2018-06-15 16:09:11 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f15aed0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f898f411650:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab715e0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ff71ab4c5d0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsuRq9Q1
-2018-06-15 15:32:57 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsuRq9Q1' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftMetal.dylib'
-2018-06-15 15:32:57 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 15:32:57 +0000  
+2018-06-15 16:09:11 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f15aed0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7f898f411650:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsyLGKlS
+2018-06-15 16:09:11 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsyLGKlS' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftFoundation.dylib'
+2018-06-15 16:09:11 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 16:09:11 +0000  
 
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71a9912e0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ff71aa509a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa80920>: {
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0f62b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f898f412040:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f50fed0>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71a9912e0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ff71aa509a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+2018-06-15 16:09:11 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0f62b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f898f412040:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71a9912e0 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ff71aa509a0:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsXzy0bz
-2018-06-15 15:32:57 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsXzy0bz' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib'
-2018-06-15 15:32:57 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 15:32:57 +0000  
+2018-06-15 16:09:11 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0f62b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7f898f412040:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsluAgEr
+2018-06-15 16:09:11 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsluAgEr' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftMetal.dylib'
+2018-06-15 16:09:11 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000  2018-06-15 16:09:11 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71a98d5e0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ff71aa52200:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa80960>: {
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000  
+2018-06-15 16:09:11 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0ed900 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f898f413310:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f50ff50>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71a98d5e0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ff71aa52200:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+2018-06-15 16:09:11 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0ed900 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f898f413310:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71a98d5e0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ff71aa52200:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsKvK4ry
-2018-06-15 15:32:57 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsKvK4ry' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib'
-2018-06-15 15:32:57 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000  2018-06-15 15:32:57 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:11 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0ed900 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7f898f413310:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsHBaw94
+2018-06-15 16:09:11 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsHBaw94' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib'
+2018-06-15 16:09:12 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000  2018-06-15 16:09:12 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab71240 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ff71aa53d40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa89f60>: {
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f2fbef0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f898f415590:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510b40>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab71240 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ff71aa53d40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>: {
+2018-06-15 16:09:12 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f2fbef0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f898f415590:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab71240 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ff71aa53d40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsr0VIZz
-2018-06-15 15:32:57 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsr0VIZz' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftUIKit.dylib'
-2018-06-15 15:32:57 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 15:32:57 +0000  
+2018-06-15 16:09:12 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f2fbef0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7f898f415590:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsWVnkma
+2018-06-15 16:09:12 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsWVnkma' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib'
+2018-06-15 16:09:12 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000  2018-06-15 16:09:12 +0000 [MT] /usr/bin/codesign exited with 0
 
-2018-06-15 15:32:57 +0000  
-2018-06-15 15:32:57 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab6ed00 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ff71aa51b00:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa79490>: {
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f4259e0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f898f410e30:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510870>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab6ed00 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ff71aa51b00:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>: {
+2018-06-15 16:09:12 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f4259e0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f898f410e30:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'>: {
 }
-2018-06-15 15:32:57 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab6ed00 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ff71aa51b00:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlements3JjBZq
-2018-06-15 15:32:57 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlements3JjBZq' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftos.dylib'
-2018-06-15 15:32:58 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000 [MT] /usr/bin/codesign exited with 0
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7ff71ab79aa0 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7ff71a935e40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7ff71aa6e240>: {
-}
-2018-06-15 15:32:58 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7ff71ab79aa0 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7ff71a935e40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'>: {
-}
-2018-06-15 15:32:58 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7ff71ab79aa0 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7ff71a935e40:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsbVKsPY
-2018-06-15 15:32:58 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/entitlementsbVKsPY' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app'
-2018-06-15 15:32:58 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root/Payload/UserManager.app: signed app bundle with Mach-O universal (armv7 arm64) [com.kevinscardina.SpectrumCodingTest]
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000  2018-06-15 15:32:58 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:12 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f4259e0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7f898f410e30:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsi82J1P
+2018-06-15 16:09:12 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsi82J1P' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftUIKit.dylib'
+2018-06-15 16:09:12 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] /usr/bin/codesign exited with 02018-06-15 16:09:12 +0000  
 
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000  
-2018-06-15 15:32:58 +0000 [MT] Processing step: IDEDistributionStreamingZipItemStep
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
-2018-06-15 15:32:58 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
-2018-06-15 15:32:58 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Packages/UserManager.ipa'
-2018-06-15 15:32:58 +0000  >>> Copying /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.C26/Root 
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/_CodeSignature/CodeResources ... 
-2018-06-15 15:32:58 +0000  20055 bytes for ./Payload/UserManager.app/_CodeSignature/CodeResources
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon20x20@2x.png ... 
-3175 bytes for ./Payload/UserManager.app/AppIcon20x20@2x.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon20x20@2x~ipad.png ... 
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f0e75c0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f898f414560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510ad0>: {
+}
+2018-06-15 16:09:12 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f0e75c0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f898f414560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2018-06-15 16:09:12 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f0e75c0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7f898f414560:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsX8aKkR
+2018-06-15 16:09:12 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsX8aKkR' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftos.dylib'
+2018-06-15 16:09:12 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] /usr/bin/codesign exited with 0
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000  
+2018-06-15 16:09:12 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0x7f898f507e40 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7f898a5c4f10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7f898f510610>: {
+}
+2018-06-15 16:09:12 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7f898f507e40 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7f898a5c4f10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'>: {
+}
+2018-06-15 16:09:12 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7f898f507e40 'com.kevinscardina.SpectrumCodingTest' '<DVTFilePath:0x7f898a5c4f10:'/Users/Kevin/Projects/iOS/swift-usermanager/artifact/UserManager.xcarchive/Products/Applications/UserManager.app'>'> to: /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsca316T
+2018-06-15 16:09:12 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' '3C5BD967972B340302A0CF7730DEF9340640F7F8' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/entitlementsca316T' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app'
+2018-06-15 16:09:13 +0000  /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root/Payload/UserManager.app: signed app bundle with Mach-O universal (armv7 arm64) [com.kevinscardina.SpectrumCodingTest]
+2018-06-15 16:09:13 +0000  
+2018-06-15 16:09:13 +0000  2018-06-15 16:09:13 +0000 [MT] /usr/bin/codesign exited with 0
+
+2018-06-15 16:09:13 +0000  
+2018-06-15 16:09:13 +0000 [MT] Processing step: IDEDistributionStreamingZipItemStep
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-06-15 16:09:13 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2018-06-15 16:09:13 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root' '/var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Packages/UserManager.ipa'
+2018-06-15 16:09:13 +0000  >>> Copying /var/folders/zh/3qvf10ls54x95xzhtv5zc1880000gn/T/XcodeDistPipeline.0kb/Root 
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/_CodeSignature/CodeResources ... 
+2018-06-15 16:09:13 +0000  20055 bytes for ./Payload/UserManager.app/_CodeSignature/CodeResources
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon20x20@2x.png ... 
+2018-06-15 16:09:13 +0000  3175 bytes for ./Payload/UserManager.app/AppIcon20x20@2x.png
+copying file ./Payload/UserManager.app/AppIcon20x20@2x~ipad.png ... 
 3175 bytes for ./Payload/UserManager.app/AppIcon20x20@2x~ipad.png
 copying file ./Payload/UserManager.app/AppIcon20x20@3x.png ... 
-2018-06-15 15:32:58 +0000  5985 bytes for ./Payload/UserManager.app/AppIcon20x20@3x.png
-copying file ./Payload/UserManager.app/AppIcon20x20~ipad.png ... 
-2018-06-15 15:32:58 +0000  1086 bytes for ./Payload/UserManager.app/AppIcon20x20~ipad.png
+2018-06-15 16:09:13 +0000  5985 bytes for ./Payload/UserManager.app/AppIcon20x20@3x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon20x20~ipad.png ... 
+1086 bytes for ./Payload/UserManager.app/AppIcon20x20~ipad.png
 copying file ./Payload/UserManager.app/AppIcon29x29@2x.png ... 
-2018-06-15 15:32:58 +0000  5599 bytes for ./Payload/UserManager.app/AppIcon29x29@2x.png
+2018-06-15 16:09:13 +0000  5599 bytes for ./Payload/UserManager.app/AppIcon29x29@2x.png
 copying file ./Payload/UserManager.app/AppIcon29x29@2x~ipad.png ... 
-2018-06-15 15:32:58 +0000  5599 bytes for ./Payload/UserManager.app/AppIcon29x29@2x~ipad.png
+2018-06-15 16:09:13 +0000  5599 bytes for ./Payload/UserManager.app/AppIcon29x29@2x~ipad.png
 copying file ./Payload/UserManager.app/AppIcon29x29@3x.png ... 
-2018-06-15 15:32:58 +0000  11074 bytes for ./Payload/UserManager.app/AppIcon29x29@3x.png
-copying file ./Payload/UserManager.app/AppIcon29x29~ipad.png ... 
-2018-06-15 15:32:58 +0000  1938 bytes for ./Payload/UserManager.app/AppIcon29x29~ipad.png
+2018-06-15 16:09:13 +0000  11074 bytes for ./Payload/UserManager.app/AppIcon29x29@3x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon29x29~ipad.png ... 
+1938 bytes for ./Payload/UserManager.app/AppIcon29x29~ipad.png
 copying file ./Payload/UserManager.app/AppIcon40x40@2x.png ... 
-2018-06-15 15:32:58 +0000  9768 bytes for ./Payload/UserManager.app/AppIcon40x40@2x.png
-copying file ./Payload/UserManager.app/AppIcon40x40@2x~ipad.png ... 
-2018-06-15 15:32:58 +0000  9768 bytes for ./Payload/UserManager.app/AppIcon40x40@2x~ipad.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon40x40@3x.png ... 
-2018-06-15 15:32:58 +0000  17602 bytes for ./Payload/UserManager.app/AppIcon40x40@3x.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon40x40~ipad.png ... 
-3175 bytes for ./Payload/UserManager.app/AppIcon40x40~ipad.png
+2018-06-15 16:09:13 +0000  9768 bytes for ./Payload/UserManager.app/AppIcon40x40@2x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon40x40@2x~ipad.png ... 
+2018-06-15 16:09:13 +0000  9768 bytes for ./Payload/UserManager.app/AppIcon40x40@2x~ipad.png
+copying file ./Payload/UserManager.app/AppIcon40x40@3x.png ... 
+2018-06-15 16:09:13 +0000  17602 bytes for ./Payload/UserManager.app/AppIcon40x40@3x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon40x40~ipad.png ... 
+2018-06-15 16:09:13 +0000  3175 bytes for ./Payload/UserManager.app/AppIcon40x40~ipad.png
 copying file ./Payload/UserManager.app/AppIcon60x60@2x.png ... 
-2018-06-15 15:32:58 +0000  17602 bytes for ./Payload/UserManager.app/AppIcon60x60@2x.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon60x60@3x.png ... 
-2018-06-15 15:32:58 +0000  32865 bytes for ./Payload/UserManager.app/AppIcon60x60@3x.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon76x76@2x~ipad.png ... 
-2018-06-15 15:32:58 +0000  26014 bytes for ./Payload/UserManager.app/AppIcon76x76@2x~ipad.png
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/AppIcon76x76~ipad.png ... 
-2018-06-15 15:32:58 +0000  9019 bytes for ./Payload/UserManager.app/AppIcon76x76~ipad.png
-copying file ./Payload/UserManager.app/AppIcon83.5x83.5@2x~ipad.png ... 
-2018-06-15 15:32:58 +0000  29929 bytes for ./Payload/UserManager.app/AppIcon83.5x83.5@2x~ipad.png
-copying file ./Payload/UserManager.app/Assets.car ... 
-2018-06-15 15:32:58 +0000  616664 bytes for ./Payload/UserManager.app/Assets.car
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  4335 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
+2018-06-15 16:09:13 +0000  17602 bytes for ./Payload/UserManager.app/AppIcon60x60@2x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon60x60@3x.png ... 
+2018-06-15 16:09:13 +0000  32865 bytes for ./Payload/UserManager.app/AppIcon60x60@3x.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon76x76@2x~ipad.png ... 
+2018-06-15 16:09:13 +0000  26014 bytes for ./Payload/UserManager.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/UserManager.app/AppIcon76x76~ipad.png ... 
+2018-06-15 16:09:13 +0000  9019 bytes for ./Payload/UserManager.app/AppIcon76x76~ipad.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/AppIcon83.5x83.5@2x~ipad.png ... 
+2018-06-15 16:09:13 +0000  29929 bytes for ./Payload/UserManager.app/AppIcon83.5x83.5@2x~ipad.png
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Assets.car ... 
+2018-06-15 16:09:13 +0000  616664 bytes for ./Payload/UserManager.app/Assets.car
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:13 +0000  4335 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib
 copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib ... 
-2018-06-15 15:32:58 +0000  4456 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
+2018-06-15 16:09:13 +0000  4452 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib
 copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
 258 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
 copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  832 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
+832 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib
 copying file ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib ... 
-832 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  6673 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+2018-06-15 16:09:13 +0000  832 bytes for ./Payload/UserManager.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib
+copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:13 +0000  6685 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
 copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
-2018-06-15 15:32:58 +0000  6951 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  10898 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib ... 
-2018-06-15 15:32:58 +0000  11003 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2018-06-15 16:09:13 +0000  6936 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:13 +0000  10891 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/objects-11.0+.nib
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib ... 
+2018-06-15 16:09:13 +0000  11009 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/EmD-kL-fLf-view-0Qc-Jw-H0o.nib/runtime.nib
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/Info.plist ... 
 360 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/Info.plist
 copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  1835 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib
+2018-06-15 16:09:13 +0000  1835 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/objects-11.0+.nib
 copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib ... 
-2018-06-15 15:32:58 +0000  1835 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib
-copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib ... 
-2018-06-15 15:32:58 +0000  3195 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib
+2018-06-15 16:09:13 +0000  1835 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UINavigationController-Paj-FK-FzW.nib/runtime.nib
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib ... 
+2018-06-15 16:09:13 +0000  3183 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/objects-11.0+.nib
 copying file ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib ... 
-2018-06-15 15:32:58 +0000  3193 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib
-2018-06-15 15:32:58 +0000  copying file ./Payload/UserManager.app/exportAdhocOptions.plist ... 
-140 bytes for ./Payload/UserManager.app/exportAdhocOptions.plist
+2018-06-15 16:09:13 +0000  3198 bytes for ./Payload/UserManager.app/Base.lproj/Main.storyboardc/UISplitViewController-xhp-nw-Fj0.nib/runtime.nib
+copying file ./Payload/UserManager.app/exportAdhocOptions.plist ... 
+2018-06-15 16:09:13 +0000  140 bytes for ./Payload/UserManager.app/exportAdhocOptions.plist
 copying file ./Payload/UserManager.app/exportOptions.plist ... 
-2018-06-15 15:32:58 +0000  85 bytes for ./Payload/UserManager.app/exportOptions.plist
-copying file ./Payload/UserManager.app/Frameworks/libswiftCore.dylib ... 
-2018-06-15 15:32:59 +0000  21080000 bytes for ./Payload/UserManager.app/Frameworks/libswiftCore.dylib
+85 bytes for ./Payload/UserManager.app/exportOptions.plist
+2018-06-15 16:09:13 +0000  copying file ./Payload/UserManager.app/Frameworks/libswiftCore.dylib ... 
+2018-06-15 16:09:14 +0000  21080000 bytes for ./Payload/UserManager.app/Frameworks/libswiftCore.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftCoreData.dylib ... 
-2018-06-15 15:32:59 +0000  394752 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreData.dylib
+2018-06-15 16:09:14 +0000  394752 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreData.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib ... 
-2018-06-15 15:32:59 +0000  208704 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib
+2018-06-15 16:09:14 +0000  208704 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreFoundation.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib ... 
-2018-06-15 15:32:59 +0000  578160 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib
+2018-06-15 16:09:14 +0000  578160 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreGraphics.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib ... 
-2018-06-15 15:32:59 +0000  209264 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib
+2018-06-15 16:09:14 +0000  209264 bytes for ./Payload/UserManager.app/Frameworks/libswiftCoreImage.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftDarwin.dylib ... 
-2018-06-15 15:32:59 +0000  303472 bytes for ./Payload/UserManager.app/Frameworks/libswiftDarwin.dylib
+2018-06-15 16:09:14 +0000  303472 bytes for ./Payload/UserManager.app/Frameworks/libswiftDarwin.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftDispatch.dylib ... 
-2018-06-15 15:32:59 +0000  1009664 bytes for ./Payload/UserManager.app/Frameworks/libswiftDispatch.dylib
+2018-06-15 16:09:14 +0000  1009664 bytes for ./Payload/UserManager.app/Frameworks/libswiftDispatch.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftFoundation.dylib ... 
-2018-06-15 15:32:59 +0000  8413696 bytes for ./Payload/UserManager.app/Frameworks/libswiftFoundation.dylib
+2018-06-15 16:09:14 +0000  8413696 bytes for ./Payload/UserManager.app/Frameworks/libswiftFoundation.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftMetal.dylib ... 
-2018-06-15 15:33:00 +0000  251664 bytes for ./Payload/UserManager.app/Frameworks/libswiftMetal.dylib
-copying file ./Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib ... 
-2018-06-15 15:33:00 +0000  259344 bytes for ./Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib
-2018-06-15 15:33:00 +0000  copying file ./Payload/UserManager.app/Frameworks/libswiftos.dylib ... 
-2018-06-15 15:33:00 +0000  249312 bytes for ./Payload/UserManager.app/Frameworks/libswiftos.dylib
+2018-06-15 16:09:14 +0000  251664 bytes for ./Payload/UserManager.app/Frameworks/libswiftMetal.dylib
+2018-06-15 16:09:14 +0000  copying file ./Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib ... 
+2018-06-15 16:09:14 +0000  259344 bytes for ./Payload/UserManager.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/UserManager.app/Frameworks/libswiftos.dylib ... 
+2018-06-15 16:09:14 +0000  249312 bytes for ./Payload/UserManager.app/Frameworks/libswiftos.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib ... 
-2018-06-15 15:33:00 +0000  212608 bytes for ./Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib
+2018-06-15 16:09:14 +0000  212608 bytes for ./Payload/UserManager.app/Frameworks/libswiftQuartzCore.dylib
 copying file ./Payload/UserManager.app/Frameworks/libswiftUIKit.dylib ... 
-2018-06-15 15:33:00 +0000  361888 bytes for ./Payload/UserManager.app/Frameworks/libswiftUIKit.dylib
-2018-06-15 15:33:00 +0000  copying file ./Payload/UserManager.app/Info.plist ... 
+2018-06-15 16:09:14 +0000  361888 bytes for ./Payload/UserManager.app/Frameworks/libswiftUIKit.dylib
+2018-06-15 16:09:14 +0000  copying file ./Payload/UserManager.app/Info.plist ... 
 1415 bytes for ./Payload/UserManager.app/Info.plist
 copying file ./Payload/UserManager.app/PkgInfo ... 
-8 bytes for ./Payload/UserManager.app/PkgInfo
+2018-06-15 16:09:14 +0000  8 bytes for ./Payload/UserManager.app/PkgInfo
 copying file ./Payload/UserManager.app/README.md ... 
-2018-06-15 15:33:00 +0000  2975 bytes for ./Payload/UserManager.app/README.md
+2975 bytes for ./Payload/UserManager.app/README.md
 copying file ./Payload/UserManager.app/UserManager ... 
-2018-06-15 15:33:00 +0000  461760 bytes for ./Payload/UserManager.app/UserManager
-2018-06-15 15:33:00 +0000  copying file ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.mom ... 
+2018-06-15 16:09:14 +0000  461760 bytes for ./Payload/UserManager.app/UserManager
+2018-06-15 16:09:14 +0000  copying file ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.mom ... 
 1466 bytes for ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.mom
 copying file ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.omo ... 
-2018-06-15 15:33:00 +0000  2456 bytes for ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.omo
+2018-06-15 16:09:14 +0000  2456 bytes for ./Payload/UserManager.app/UserManager.momd/SpectrumCodingTest.omo
 copying file ./Payload/UserManager.app/UserManager.momd/VersionInfo.plist ... 
-2018-06-15 15:33:00 +0000  227 bytes for ./Payload/UserManager.app/UserManager.momd/VersionInfo.plist
-copying file ./Payload/UserManager.app/ValidateControl.nib/objects-11.0+.nib ... 
-2018-06-15 15:33:00 +0000  3949 bytes for ./Payload/UserManager.app/ValidateControl.nib/objects-11.0+.nib
-2018-06-15 15:33:00 +0000  copying file ./Payload/UserManager.app/ValidateControl.nib/runtime.nib ... 
-3282 bytes for ./Payload/UserManager.app/ValidateControl.nib/runtime.nib
-2018-06-15 15:33:00 +0000  2018-06-15 15:33:00 +0000 [MT] /usr/bin/ditto exited with 0
+227 bytes for ./Payload/UserManager.app/UserManager.momd/VersionInfo.plist
+2018-06-15 16:09:14 +0000  copying file ./Payload/UserManager.app/ValidateControl.nib/objects-11.0+.nib ... 
+3944 bytes for ./Payload/UserManager.app/ValidateControl.nib/objects-11.0+.nib
+copying file ./Payload/UserManager.app/ValidateControl.nib/runtime.nib ... 
+2018-06-15 16:09:14 +0000  3276 bytes for ./Payload/UserManager.app/ValidateControl.nib/runtime.nib
+2018-06-15 16:09:14 +0000  
+2018-06-15 16:09:14 +0000 [MT] /usr/bin/ditto exited with 02018-06-15 16:09:14 +0000  
 
-2018-06-15 15:33:00 +0000  2018-06-15 15:33:00 +0000  
-
-2018-06-15 15:33:00 +0000 [MT] Processing step: IDEDistributionCreateManifestStep
+2018-06-15 16:09:14 +0000  
+2018-06-15 16:09:14 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

@@ -12,6 +12,7 @@ test(){
         -scheme "${SCHEME}" \
         -sdk iphonesimulator \
         -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' \
+        -derivedDataPath "${BUILDDIR}" \
         -enableCodeCoverage YES \
         test
 }

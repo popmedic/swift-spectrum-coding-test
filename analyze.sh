@@ -11,6 +11,7 @@ analyze(){
         -project "${PROJ}" \
         -scheme "${SCHEME}" \
         -sdk iphonesimulator11.2 \
+        -derivedDataPath "${BUILDDIR}" \
         clean \
         analyze
 }
