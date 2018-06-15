@@ -7,9 +7,16 @@
 #  Copyright © 2018 Kevin Scardina. All rights reserved.
 
 export_(){
+    # Export Adhoc
     xcodebuild \
         -exportArchive \
         -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
         -exportOptionsPlist exportAdhocOptions.plist \
-        -exportPath "${ARTIFACTDIR}"
+        -exportPath "${ARTIFACTDIR}/adhoc/"
+    # Export App Store
+    xcodebuild \
+        -exportArchive \
+        -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
+        -exportOptionsPlist exportOptions.plist \
+        -exportPath "${ARTIFACTDIR}/appstore/"
 }
