@@ -5,7 +5,7 @@
 
 ## Objective
 
-To fulfill the requirements in [this document](test.pdf).
+To fulfill the requirements in [this document](requirements.pdf).
 
 ## Requirements
 
