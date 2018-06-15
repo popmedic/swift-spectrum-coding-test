@@ -103,8 +103,8 @@ export_
 ## Screen Shots
 
 ![iPad](ScreenShots/ss1.png)
-![iPhone](ScreenShots/ss2.png =300x)
-![iPhone](ScreenShots/ss3.png =300x)
-![iPhone](ScreenShots/ss4.png =300x)
-![iPhone](ScreenShots/ss5.png =300x)
-![iPhone](ScreenShots/ss6.png =300x)
+![iPhone](ScreenShots/ss2.png)
+![iPhone](ScreenShots/ss3.png)
+![iPhone](ScreenShots/ss4.png)
+![iPhone](ScreenShots/ss5.png)
+![iPhone](ScreenShots/ss6.png)
