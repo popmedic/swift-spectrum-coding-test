@@ -1,5 +1,7 @@
 # Spectrum's Coding Test for iOS
+
 [![Build Status](https://travis-ci.org/popmedic/swift-spectrum-coding-test.svg?branch=master)](https://travis-ci.org/popmedic/swift-spectrum-coding-test)
+
 ## Objective
 
 To fulfill the requirements in [this document](My_Spectrum_-_Xamarin_Test.pdf).
