@@ -119,14 +119,12 @@ Infrastructure(Models/Services)
 
 ![iPad](ScreenShots/ss2.png)
 
+![iPhone](ScreenShots/ss7.png)
+
 ![iPhone](ScreenShots/ss3.png)
 
 ![iPhone](ScreenShots/ss4.png)
 
-![iPhone](ScreenShots/ss5.png)
-
 ![iPhone](ScreenShots/ss6.png)
 
-![iPhone](ScreenShots/ss7.png)
-
-![iPhone](ScreenShots/ss8.png)
+![iPhone](ScreenShots/ss5.png)
