@@ -13,7 +13,7 @@ import Foundation
  */
 protocol ValidatorProtocol {
     /**
-     isValid should perform a check on string
+     isValid performs a check on string
      
      - parameters:
         - string: String to validate

@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+/**
+ Core Data implementation of a UserManager
+ */
 class UserManagerCoreData: UserManagerProtocol {
     private let container:NSPersistentContainer!
     
