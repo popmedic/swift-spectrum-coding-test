@@ -69,6 +69,12 @@
 		0A62A39F20D30608000CE464 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AD9024820D32DBF002CA76E /* autobuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autobuild.sh; sourceTree = "<group>"; };
 		0AD9024920D33A4F002CA76E /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
+		0AD9024C20D3433B002CA76E /* analyze.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = analyze.sh; sourceTree = "<group>"; };
+		0AD9024D20D34419002CA76E /* configure.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure.sh; sourceTree = "<group>"; };
+		0AD9024E20D3445D002CA76E /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		0AD9024F20D344B9002CA76E /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		0AD9025020D344E8002CA76E /* archive.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = archive.sh; sourceTree = "<group>"; };
+		0AD9025120D3453E002CA76E /* export_.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = export_.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +98,8 @@
 		0A4E742E20D0279D0002D769 = {
 			isa = PBXGroup;
 			children = (
-				0AD9024920D33A4F002CA76E /* exportOptions.plist */,
-				0AD9024820D32DBF002CA76E /* autobuild.sh */,
 				0A4E749920D20D270002D769 /* README.md */,
+				0AD9024B20D342E0002CA76E /* Build */,
 				0A4E743920D0279D0002D769 /* SpectrumCodingTest */,
 				0A4E745120D0279D0002D769 /* SpectrumCodingTestTests */,
 				0A4E743820D0279D0002D769 /* Products */,
@@ -200,6 +205,21 @@
 				0A4E744120D0279D0002D769 /* SpectrumCodingTest.xcdatamodeld */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0AD9024B20D342E0002CA76E /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				0AD9024920D33A4F002CA76E /* exportOptions.plist */,
+				0AD9024820D32DBF002CA76E /* autobuild.sh */,
+				0AD9024C20D3433B002CA76E /* analyze.sh */,
+				0AD9024D20D34419002CA76E /* configure.sh */,
+				0AD9024E20D3445D002CA76E /* build.sh */,
+				0AD9024F20D344B9002CA76E /* test.sh */,
+				0AD9025020D344E8002CA76E /* archive.sh */,
+				0AD9025120D3453E002CA76E /* export_.sh */,
+			);
+			name = Build;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

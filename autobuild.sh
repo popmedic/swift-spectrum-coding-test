@@ -6,57 +6,20 @@
 #  Created by Kevin Scardina on 6/14/18.
 #  Copyright © 2018 Kevin Scardina. All rights reserved.
 
-BUILDDIR="build/"
-ARTIFACTDIR="artifact/"
-ARTIFACT="SpectrumCodingTest.xcarchive"
-SCHEME="SpectrumCodingTest"
-PROJ="SpectrumCodingTest.xcodeproj"
-
-err_report() {
-    echo "Error on line $1"
-    exit
-}
-
-trap 'err_report $LINENO' ERR
+# Configure
+source configure.sh
 
 # Analyze
-xcodebuild \
-    -project "${PROJ}" \
-    -scheme "${SCHEME}" \
-    -sdk iphonesimulator11.2 \
-    clean \
-    analyze
+source analyze.sh && analyze
 
 # Build
-xcodebuild \
-    -project "${PROJ}" \
-    -scheme "${SCHEME}" \
-    build \
-	CODE_SIGN_IDENTITY="" \
-    CODE_SIGNING_REQUIRED=NO
+source build.sh && build
 
 # Test
-xcodebuild \
-    -project "${PROJ}" \
-    -scheme "${SCHEME}" \
-    -sdk iphonesimulator \
-    -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' \
-    test
+source test.sh && test
 
 # Archive
-xcodebuild \
-    -project "${PROJ}" \
-    -scheme "${SCHEME}" \
-    -sdk iphoneos \
-    -configuration AppStoreDistribution \
-    -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
-    archive \
-    CODE_SIGN_IDENTITY="" \
-    CODE_SIGNING_REQUIRED=NO
+source archive.sh && archive
 
 # Export
-xcodebuild \
-    -exportArchive \
-    -archivePath "${ARTIFACTDIR}${ARTIFACT}" \
-    -exportOptionsPlist exportOptions.plist \
-    -exportPath "${ARTIFACTDIR}"
+source export_.sh && export_
