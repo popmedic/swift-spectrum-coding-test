@@ -1,7 +1,7 @@
 # User Manager (Local) for iOS
 
-[![Build Status](https://travis-ci.org/popmedic/swift-spectrum-coding-test.svg?branch=master)](https://travis-ci.org/popmedic/swift-spectrum-coding-test)
-[![codecov](https://codecov.io/gh/popmedic/swift-spectrum-coding-test/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-spectrum-coding-test)
+[![Build Status](https://travis-ci.org/popmedic/swift-usermanager.svg?branch=master)](https://travis-ci.org/popmedic/swift-usermanager)
+[![codecov](https://codecov.io/gh/popmedic/swift-usermanager/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-usermanager)
 
 ## Objective
 
