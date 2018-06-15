@@ -117,7 +117,7 @@ Infrastructure(Models/Services)
 
 ![iPad](ScreenShots/ss1.png)
 
-![iPhone](ScreenShots/ss2.png)
+![iPad](ScreenShots/ss2.png)
 
 ![iPhone](ScreenShots/ss3.png)
 
@@ -126,3 +126,5 @@ Infrastructure(Models/Services)
 ![iPhone](ScreenShots/ss5.png)
 
 ![iPhone](ScreenShots/ss6.png)
+
+![iPhone](ScreenShots/ss7.png)
