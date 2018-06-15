@@ -1,7 +1,7 @@
 # Spectrum's Coding Test for iOS
 
 [![Build Status](https://travis-ci.org/popmedic/swift-spectrum-coding-test.svg?branch=master)](https://travis-ci.org/popmedic/swift-spectrum-coding-test)
-[![codecov](https://codecov.io/gh/popmedic/swift-alpc/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-spectrum-coding-test)
+[![codecov](https://codecov.io/gh/popmedic/swift-spectrum-coding-test/branch/master/graph/badge.svg)](https://codecov.io/gh/popmedic/swift-spectrum-coding-test)
 
 ## Objective
 
