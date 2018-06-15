@@ -10,20 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidateControl" customModule="SpectrumCodingTest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ValidateControl" customModule="UserManager" customModuleProvider="target">
             <connections>
-                <outlet property="checkedLabel" destination="P7r-Zu-aGM" id="Cwr-b0-sAS"/>
+                <outlet property="checkedLabel" destination="P7r-Zu-aGM" id="DHb-CO-N1a"/>
                 <outlet property="containerView" destination="iN0-l3-epB" id="p0M-CC-pXM"/>
-                <outlet property="descriptionLabel" destination="rZi-bU-Tfg" id="1uj-fy-RMK"/>
+                <outlet property="descriptionLabel" destination="rZi-bU-Tfg" id="7f5-ZU-Za8"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="382" height="131"/>
+            <rect key="frame" x="0.0" y="0.0" width="382" height="126"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7r-Zu-aGM">
-                    <rect key="frame" x="0.0" y="0.0" width="44" height="131"/>
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="126"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="EeT-hC-3q7"/>
                     </constraints>
@@ -32,7 +32,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZi-bU-Tfg">
-                    <rect key="frame" x="44" y="0.0" width="338" height="131"/>
+                    <rect key="frame" x="44" y="0.0" width="338" height="126"/>
                     <string key="text">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
@@ -41,6 +41,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="height" secondItem="rZi-bU-Tfg" secondAttribute="height" id="5mk-lT-JDO"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BYM-zX-s73"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="PVa-ta-G0E"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="leading" secondItem="P7r-Zu-aGM" secondAttribute="trailing" id="Tfg-2T-WRT"/>
@@ -51,7 +52,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="31" y="-133.5"/>
+            <point key="canvasLocation" x="31" y="-136"/>
         </view>
     </objects>
 </document>
