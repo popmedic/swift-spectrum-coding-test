@@ -110,7 +110,5 @@ fastlane/test_output
 ### Needed for required artifact ###
 
 artifact/*
-!artifact/adhoc/
-!artifact/adhoc/*.ipa
 !artifact/simulator/
 !artifact/simulator/*.app/
