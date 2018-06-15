@@ -84,7 +84,7 @@ export_
 
 ## Stack
 
-- Interface Builder/XCode
+- Interface Builder/XCode (Swift 4.0)
 - Core Data
 
 ## Architecture

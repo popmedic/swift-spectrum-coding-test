@@ -54,10 +54,62 @@ test
 
 **Archive**
 
-This will generate an non-codesigned archive of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.xcarchive`.
+This will generate a non-codesigned archive of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.xcarchive`.
 
 ```
 source configure.sh && \
 source archive.sh && \
-archive.sh
+archive
 ```
+
+**Export**
+
+This will generate a codesigned IPA of the project in `${PROJECT_DIR}/archive/SpectrumCodingTest.ipa` for submittal to the iTunes AppStore.  You will have to set your codesigning certificates in XCode, and chance the exportOptions.plist team identifier to your own. 
+
+```
+source configure.sh && \
+source archive.sh && \
+source export_.sh \
+archive \
+export_
+```
+
+**Autobuild**
+
+`autobuild` will analyze, build, test, archive, and export project.
+
+```
+./autobuild.sh
+```
+
+## Stack
+
+- Interface Builder/XCode
+- Core Data
+
+## Architecture
+
+4 tier architecture, project divided into the following tiers:
+
+- Presentation
+    - this layer is for everything the user sees, typically the view layer.
+- Application
+    - this layer updates the Presentation layer and handles events/requests from the Presentation layer. Interacts with Domain layer to retreive data from different Infrastructures
+- Domain
+    - abtraction layer used to de-couple the Infrastructure allowing easily change between different services.
+- Infrastucture
+    - Different services used for models.  Currently, only supporting Core Data.
+
+## Screen Shots
+
+![iPad](ScreenShots/ss1.png)
+
+![iPhone](ScreenShots/ss2.png)
+
+![iPhone](ScreenShots/ss3.png)
+
+![iPhone](ScreenShots/ss4.png)
+
+![iPhone](ScreenShots/ss5.png)
+
+![iPhone](ScreenShots/ss6.png)
