@@ -109,5 +109,5 @@ fastlane/test_output
 
 ### Kevin Customized ###
 
-artifact/
+artifact/*
 !artifact/*.ipa
