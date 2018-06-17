@@ -12,10 +12,6 @@ To fulfill the requirements in [this document](requirements.pdf).
 - XCode version 9.2
 - Command line tools
 
-## Artifact
-
-The artifact from a build can be found in the ${PROJECT_DIR}/artifact directory.  The only artifact included in an archive (zip deployment) is a simulator build for all simulators. This "app" can be draged into a simulator and ran.  All other artifact (IPAs) would be pointless without provisioning profiles.  To generate ADHOC and AppStore artifact please follow the build instructions.
-
 ## Build
 
 ### From XCode

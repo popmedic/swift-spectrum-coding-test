@@ -46,6 +46,12 @@ class UsersMasterViewController: UIViewController {
                 // if we are loading the detail view to create a new user, nil out the user id
                 destination.userID = nil
             }
+            // hide the masterview on ipads
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                UIView.animate(withDuration: 0.5) { () -> Void in
+                    self.splitViewController?.preferredDisplayMode = .primaryHidden
+                }
+            }
         }
     }
     

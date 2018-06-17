@@ -24,13 +24,10 @@
 		0A4E748520D152C00002D769 /* UsersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748420D152C00002D769 /* UsersDetailViewController.swift */; };
 		0A4E748920D198F50002D769 /* ValidateControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E748820D198F50002D769 /* ValidateControl.swift */; };
 		0A4E748B20D199190002D769 /* ValidateControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E748A20D199190002D769 /* ValidateControl.xib */; };
-		0A4E749A20D20D270002D769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E749920D20D270002D769 /* README.md */; };
 		0A4E749C20D2BE840002D769 /* SequenceValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E749B20D2BE840002D769 /* SequenceValidator.swift */; };
 		0A4E74A220D2E0E20002D769 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E74A120D2E0E20002D769 /* UIViewController.swift */; };
 		0AD9024720D3077B002CA76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E744420D0279D0002D769 /* Assets.xcassets */; };
-		0AD9024A20D33A4F002CA76E /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AD9024920D33A4F002CA76E /* exportOptions.plist */; };
 		0AD9025320D366C9002CA76E /* UserManagerCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD9025220D366C9002CA76E /* UserManagerCoreDataTests.swift */; };
-		0AE7524D20D40CB20075DC17 /* exportAdhocOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AE7524C20D40CB20075DC17 /* exportAdhocOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,12 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD9024720D3077B002CA76E /* Assets.xcassets in Resources */,
-				0AD9024A20D33A4F002CA76E /* exportOptions.plist in Resources */,
-				0A4E749A20D20D270002D769 /* README.md in Resources */,
 				0A4E748B20D199190002D769 /* ValidateControl.xib in Resources */,
 				0A4E744020D0279D0002D769 /* Main.storyboard in Resources */,
 				0A4E744820D0279D0002D769 /* LaunchScreen.storyboard in Resources */,
-				0AE7524D20D40CB20075DC17 /* exportAdhocOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
