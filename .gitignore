@@ -110,5 +110,3 @@ fastlane/test_output
 ### Needed for required artifact ###
 
 artifact/*
-!artifact/simulator/
-!artifact/simulator/*.app/
