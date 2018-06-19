@@ -41,7 +41,6 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="height" secondItem="rZi-bU-Tfg" secondAttribute="height" id="5mk-lT-JDO"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BYM-zX-s73"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="PVa-ta-G0E"/>
                 <constraint firstItem="rZi-bU-Tfg" firstAttribute="leading" secondItem="P7r-Zu-aGM" secondAttribute="trailing" id="Tfg-2T-WRT"/>
