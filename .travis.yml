@@ -3,5 +3,5 @@ os: osx
 osx_image: xcode9.2
 script:
 - xcodebuild -version
-- source configure.sh && source analyze.sh && source build.sh && source test.sh && analyze && build && test
+- source configure.sh && source test.sh && test
 - bash <(curl -s https://codecov.io/bash) -cF osx
