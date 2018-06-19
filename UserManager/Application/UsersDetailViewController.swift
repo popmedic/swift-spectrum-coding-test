@@ -13,7 +13,7 @@ class UsersDetailViewController: UIViewController {
     
     var userID:Any?
     
-    @IBOutlet var bottomConstraints: [NSLayoutConstraint]!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var lettersAndDigitsValidateControl: ValidateControl!
     @IBOutlet weak var between5And12ValidateControl: ValidateControl!
     @IBOutlet weak var sameSequenceValidateControl: ValidateControl!
@@ -225,13 +225,9 @@ class UsersDetailViewController: UIViewController {
             let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
             let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
             if endFrameY >= UIScreen.main.bounds.size.height {
-                for constraint in self.bottomConstraints {
-                    constraint.constant = 0.0
-                }
+                self.bottomConstraint.constant = 0.0
             } else {
-                for constraint in self.bottomConstraints {
-                    constraint.constant = (endFrame?.size.height ?? 0.0) * -1.0
-                }
+                self.bottomConstraint.constant = (endFrame?.size.height ?? 0.0)// * -1.0
             }
             // trigger the animation
             UIView.animate(withDuration: duration,

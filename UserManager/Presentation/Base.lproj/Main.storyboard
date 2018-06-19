@@ -14,13 +14,13 @@
         <!--Users-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UsersMasterViewController" customModule="UserManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="BYZ-38-t0r" customClass="UsersMasterViewController" customModule="UserManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1o4-2a-0Ki">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <prototypes>
@@ -75,6 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Users" id="yEz-CL-TVm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jfF-Fj-CMP">
                             <connections>
@@ -82,6 +83,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="1o4-2a-0Ki" id="xnN-lk-E4o"/>
                     </connections>
@@ -93,16 +95,16 @@
         <!--User Details-->
         <scene sceneID="evC-AV-1kY">
             <objects>
-                <viewController id="EmD-kL-fLf" customClass="UsersDetailViewController" customModule="UserManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="EmD-kL-fLf" customClass="UsersDetailViewController" customModule="UserManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qc-Jw-H0o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2t9-9e-ai8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLt-9X-2nJ" userLabel="Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV0-Jr-k78">
                                                 <rect key="frame" x="8" y="8" width="359" height="360"/>
@@ -217,7 +219,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="380" id="2ga-fY-rT5"/>
+                                            <constraint firstAttribute="height" constant="346" id="2ga-fY-rT5"/>
                                             <constraint firstItem="RV0-Jr-k78" firstAttribute="centerX" secondItem="WLt-9X-2nJ" secondAttribute="centerX" id="Vut-Oh-tsz"/>
                                             <constraint firstItem="RV0-Jr-k78" firstAttribute="top" secondItem="WLt-9X-2nJ" secondAttribute="top" constant="8" id="cZx-Lh-qds"/>
                                             <constraint firstAttribute="trailing" secondItem="RV0-Jr-k78" secondAttribute="trailing" priority="999" constant="8" id="coe-XG-s51"/>
@@ -232,73 +234,74 @@
                                     <constraint firstItem="WLt-9X-2nJ" firstAttribute="top" secondItem="2t9-9e-ai8" secondAttribute="top" id="xMB-a6-fBy"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPL-uB-jah">
-                                <rect key="frame" x="0.0" y="563" width="375" height="52"/>
-                                <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="PlW-tw-HN9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Update User">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="updateUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="XQR-Bz-tJE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-0d-L5z">
-                                <rect key="frame" x="0.0" y="615" width="375" height="52"/>
-                                <color key="backgroundColor" red="0.80784313730000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Jb8-Ve-4nU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Delete User">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="deleteUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="84M-aS-hAX"/>
-                                    <action selector="updateUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="ax5-gd-TD4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-5W-x8D">
-                                <rect key="frame" x="0.0" y="615" width="375" height="52"/>
-                                <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="vIz-Fi-Ncs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Create User">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="createUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="69W-2D-HTT"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-dE-lsA">
+                                <rect key="frame" x="0.0" y="447" width="375" height="156"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPL-uB-jah">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="PlW-tw-HN9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Update User">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="XQR-Bz-tJE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-0d-L5z">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="52"/>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Jb8-Ve-4nU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Delete User">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="84M-aS-hAX"/>
+                                            <action selector="updateUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="ax5-gd-TD4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-5W-x8D">
+                                        <rect key="frame" x="0.0" y="104" width="375" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="vIz-Fi-Ncs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="Create User">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createUserButtonAction:" destination="EmD-kL-fLf" eventType="touchUpInside" id="69W-2D-HTT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RY8-5W-x8D" firstAttribute="trailing" secondItem="pAw-Xw-lj8" secondAttribute="trailing" id="BVC-Zj-bDS"/>
-                            <constraint firstItem="PPL-uB-jah" firstAttribute="leading" secondItem="pAw-Xw-lj8" secondAttribute="leading" id="Eti-AH-1O8"/>
                             <constraint firstItem="WLt-9X-2nJ" firstAttribute="width" secondItem="0Qc-Jw-H0o" secondAttribute="width" id="EuG-xJ-qzU"/>
-                            <constraint firstItem="K2V-0d-L5z" firstAttribute="top" secondItem="PPL-uB-jah" secondAttribute="bottom" id="H2J-VM-rTe"/>
-                            <constraint firstItem="RY8-5W-x8D" firstAttribute="bottom" secondItem="pAw-Xw-lj8" secondAttribute="bottom" id="My7-h6-CJd"/>
                             <constraint firstItem="2t9-9e-ai8" firstAttribute="leading" secondItem="pAw-Xw-lj8" secondAttribute="leading" id="NaS-jW-wDf"/>
-                            <constraint firstItem="RY8-5W-x8D" firstAttribute="leading" secondItem="pAw-Xw-lj8" secondAttribute="leading" id="SAR-4V-LCO"/>
-                            <constraint firstItem="PPL-uB-jah" firstAttribute="trailing" secondItem="pAw-Xw-lj8" secondAttribute="trailing" id="VZG-g0-Vfz"/>
-                            <constraint firstItem="K2V-0d-L5z" firstAttribute="trailing" secondItem="pAw-Xw-lj8" secondAttribute="trailing" id="XOb-NS-jvd"/>
-                            <constraint firstItem="K2V-0d-L5z" firstAttribute="leading" secondItem="pAw-Xw-lj8" secondAttribute="leading" id="cJc-2f-FER"/>
+                            <constraint firstItem="pAw-Xw-lj8" firstAttribute="trailing" secondItem="ufs-dE-lsA" secondAttribute="trailing" id="Pc5-Rl-YkC"/>
                             <constraint firstItem="2t9-9e-ai8" firstAttribute="top" secondItem="pAw-Xw-lj8" secondAttribute="top" id="cu3-0u-y5m"/>
-                            <constraint firstItem="K2V-0d-L5z" firstAttribute="bottom" secondItem="pAw-Xw-lj8" secondAttribute="bottom" id="dWc-LF-Wcx"/>
+                            <constraint firstItem="ufs-dE-lsA" firstAttribute="leading" secondItem="pAw-Xw-lj8" secondAttribute="leading" id="nVm-Gm-Z6A"/>
                             <constraint firstItem="2t9-9e-ai8" firstAttribute="trailing" secondItem="pAw-Xw-lj8" secondAttribute="trailing" id="rAw-PX-0Ip"/>
-                            <constraint firstItem="RY8-5W-x8D" firstAttribute="top" secondItem="PPL-uB-jah" secondAttribute="bottom" id="tcp-Qe-AA6"/>
-                            <constraint firstItem="2t9-9e-ai8" firstAttribute="bottom" secondItem="PPL-uB-jah" secondAttribute="bottom" id="zc8-MP-Twp"/>
+                            <constraint firstAttribute="bottom" secondItem="ufs-dE-lsA" secondAttribute="bottom" id="x2T-qG-Bor"/>
+                            <constraint firstItem="ufs-dE-lsA" firstAttribute="top" secondItem="2t9-9e-ai8" secondAttribute="bottom" id="zNU-Ya-hnB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pAw-Xw-lj8"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="User Details" id="plb-qa-Bx7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="between5And12ValidateControl" destination="yBs-70-eAX" id="n3b-nw-cqZ"/>
+                        <outlet property="bottomConstraint" destination="x2T-qG-Bor" id="bDB-n2-hs3"/>
                         <outlet property="createUserButton" destination="RY8-5W-x8D" id="nCv-HM-Loi"/>
                         <outlet property="deleteUserButton" destination="K2V-0d-L5z" id="a1Z-YP-6Q1"/>
                         <outlet property="imageButton" destination="8EJ-ya-AAQ" id="P0a-NZ-o9y"/>
@@ -308,18 +311,16 @@
                         <outlet property="updateUserButton" destination="PPL-uB-jah" id="KBm-Ra-oZn"/>
                         <outlet property="usernameTextField" destination="5l5-e4-xxJ" id="BEC-zR-04D"/>
                         <outlet property="usernameValidationLabel" destination="3XQ-4F-0sb" id="JsX-wL-lMg"/>
-                        <outletCollection property="bottomConstraints" destination="dWc-LF-Wcx" collectionClass="NSMutableArray" id="P1e-Ns-2e8"/>
-                        <outletCollection property="bottomConstraints" destination="My7-h6-CJd" collectionClass="NSMutableArray" id="LiC-uQ-0Nx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cx-V2-Nu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.5" y="-816.5"/>
+            <point key="canvasLocation" x="1079.2" y="-817.24137931034488"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="cXz-tF-ddi">
             <objects>
-                <splitViewController id="xhp-nw-Fj0" sceneMemberID="viewController">
+                <splitViewController extendedLayoutIncludesOpaqueBars="YES" presentsWithGesture="NO" id="xhp-nw-Fj0" sceneMemberID="viewController">
                     <connections>
                         <segue destination="749-hU-fiz" kind="relationship" relationship="masterViewController" id="9Ka-Pw-FXu"/>
                         <segue destination="Paj-FK-FzW" kind="relationship" relationship="detailViewController" id="GDg-6a-f0J"/>
@@ -332,8 +333,10 @@
         <!--Navigation Controller-->
         <scene sceneID="VIN-gC-LEy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="749-hU-fiz" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="749-hU-fiz" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jk7-JF-Okf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -350,8 +353,10 @@
         <!--Navigation Controller-->
         <scene sceneID="UPV-GK-JTH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Paj-FK-FzW" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Paj-FK-FzW" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JJP-w9-Zif">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -370,6 +375,6 @@
         <image name="DefaultUserImage" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5WO-3W-URC"/>
+        <segue reference="jUC-P6-dzs"/>
     </inferredMetricsTieBreakers>
 </document>
