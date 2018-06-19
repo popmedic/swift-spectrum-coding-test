@@ -78,8 +78,8 @@ class UsersMasterViewController: UIViewController {
             // update the model
             self.users = users
         }
-        // reload the table view
-        self.tableView.reloadData()
+        // if visible, reload the table view
+        if !self.view.isHidden { self.tableView.reloadData() }
     }
 }
 
