@@ -5,5 +5,5 @@ script:
 - xcodebuild -version
 - source configure.sh
 - source test.sh 
-- test
-- bash <(curl -s https://codecov.io/bash) -cF osx -f "${BUILDDIR}"
+- test "default"
+- bash <(curl -s https://codecov.io/bash) -cF osx
