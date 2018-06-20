@@ -1,2 +1,5 @@
 ignore:
-    - "UserManagerTests/.*"
+    - "UserManagerTests"
+    - "UserManager/Presentation"
+    - "UserManager/Application"
+    - "UserManager/Infrastructure"
